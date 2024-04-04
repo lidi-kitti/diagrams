@@ -27,14 +27,18 @@ namespace demo
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-             Registration registration = new Registration();
+            Registration registration = new Registration();
+            this.Hide();
             registration.ShowDialog();
+          
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             SignIn signin = new SignIn();
+            this.Hide();
             signin.ShowDialog();
+           
         }
     }
 }
