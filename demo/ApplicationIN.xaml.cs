@@ -17,11 +17,17 @@ namespace demo
     /// <summary>
     /// Логика взаимодействия для Application.xaml
     /// </summary>
-    public partial class Application : Window
+    public partial class ApplicationIN : Window
     {
-        public Application()
+        public ApplicationIN()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            RegApp regApp = new RegApp();
+            regApp.ShowDialog();
         }
     }
 }

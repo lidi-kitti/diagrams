@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\user\Source\Repos\diagram\demo\obj\Release\
+C:\Users\user\source\repos\diagram\demo\obj\Release\
 demo
 none
 false
 TRACE
-C:\Users\user\Source\Repos\diagram\demo\App.xaml
-1219584333
+C:\Users\user\source\repos\diagram\demo\App.xaml
+61172915072
 
-51579654133
+10-410971276
 13-1310406943
-MainWindow.xaml;
+ApplicationIN.xaml;MainWindow.xaml;RegApp.xaml;Registration.xaml;SignIn.xaml;StatusApplication.xaml;
 
 True
 
