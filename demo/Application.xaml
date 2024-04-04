@@ -1,0 +1,14 @@
+﻿<Window x:Class="demo.Application"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:demo"
+        mc:Ignorable="d"
+        Title="Application" Height="450" Width="450">
+    <Grid>
+        <Button Content="Подать заявку" HorizontalAlignment="Left" Margin="265,104,0,0" VerticalAlignment="Top"/>
+        <Button Content="Статус заявки" HorizontalAlignment="Left" Margin="113,104,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
