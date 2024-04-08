@@ -23,5 +23,12 @@ namespace demo
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ApplicationIN applicationIN = new ApplicationIN();
+            this.Close();
+            applicationIN.ShowDialog();
+        }
     }
 }

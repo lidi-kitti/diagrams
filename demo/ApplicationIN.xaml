@@ -6,9 +6,12 @@
         xmlns:local="clr-namespace:demo"
         mc:Ignorable="d"
         Title="Application" Height="450" Width="450">
-    <Grid>
-        <Button Content="Подать заявку" HorizontalAlignment="Left" Margin="265,104,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <Button Content="Статус заявки" HorizontalAlignment="Left" Margin="113,104,0,0" VerticalAlignment="Top"/>
+    <Grid Background="LightGray">
+        <Button Content="Заявки" HorizontalAlignment="Center" Margin="0,164,0,0" VerticalAlignment="Top" Click="Button_Click" Height="53" Width="150"/>
+        <Button Content="Новая заявка" HorizontalAlignment="Center" Margin="0,288,0,0" VerticalAlignment="Top" Height="30" Width="110"/>
+        <Label Content="Для просмотра заявок на ремонт" HorizontalAlignment="Center" Margin="0,91,0,0" VerticalAlignment="Top" Height="27" Width="202"/>
+        <Label Content="нажмите на копку ниже" HorizontalAlignment="Center" Margin="0,123,0,0" VerticalAlignment="Top" Height="27" Width="150"/>
+        <Label Content="Для создания новой заявки" HorizontalAlignment="Center" Margin="0,241,0,0" VerticalAlignment="Top" Height="27" Width="202"/>
 
     </Grid>
 </Window>

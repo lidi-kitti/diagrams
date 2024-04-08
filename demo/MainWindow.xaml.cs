@@ -28,7 +28,7 @@ namespace demo
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Registration registration = new Registration();
-            this.Hide();
+            this.Close();
             registration.ShowDialog();
           
         }
@@ -36,7 +36,7 @@ namespace demo
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             SignIn signin = new SignIn();
-            this.Hide();
+            this.Close();
             signin.ShowDialog();
            
         }
