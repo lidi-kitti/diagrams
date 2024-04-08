@@ -23,3 +23,35 @@ C:\Users\user\source\repos\diagram\demo\obj\Debug\demo.csproj.GenerateResource.c
 C:\Users\user\source\repos\diagram\demo\obj\Debug\demo.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\diagram\demo\obj\Debug\demo.exe
 C:\Users\user\source\repos\diagram\demo\obj\Debug\demo.pdb
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\bin\Debug\demo.exe.config
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\bin\Debug\demo.exe
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\bin\Debug\demo.pdb
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\demo.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\ApplicationIN.g.cs
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\MainWindow.g.cs
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\RegApp.g.cs
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\Registration.g.cs
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\SignIn.g.cs
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\StatusApplication.g.cs
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\App.g.cs
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\demo_MarkupCompile.cache
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\demo_MarkupCompile.lref
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\ApplicationIN.baml
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\MainWindow.baml
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\RegApp.baml
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\Registration.baml
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\SignIn.baml
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\StatusApplication.baml
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\demo.g.resources
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\demo.Properties.Resources.resources
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\demo.csproj.GenerateResource.cache
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\demo.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\demo.exe
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\demo.pdb
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\bin\Debug\EntityFramework.dll
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\bin\Debug\EntityFramework.xml
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\demo_Content.g.cs
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\учебная практика\трпо\dexam\демо\demo\obj\Debug\demo.csproj.Up2Date

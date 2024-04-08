@@ -6,9 +6,10 @@
         xmlns:local="clr-namespace:demo"
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="400">
-    <Grid>
-        <Button Content="Войти" HorizontalAlignment="Left" Margin="171,134,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
-        <Button Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="132,0,0,0" VerticalAlignment="Center" Click="Button_Click"/>
+    <Grid Background="AliceBlue">
+        <Button Content="Войти" HorizontalAlignment="Center" Margin="0,157,0,0" VerticalAlignment="Top" Click="Button_Click_1" Height="35" Width="157"/>
+        <Button Content="Зарегистрироваться" HorizontalAlignment="Center" Margin="0,213,0,0" VerticalAlignment="Top" Click="Button_Click" Height="37" Width="156"/>
+        <TextBlock HorizontalAlignment="Left" Margin="95,52,0,0" TextWrapping="Wrap" Text="Вас приветсвует ТехСервис для работы с приложением необходимо авторизоваться, если аккаунт отсутвует, то выбирайте опцию Зарегистрироваться" VerticalAlignment="Top" Height="73" Width="238"/>
 
     </Grid>
 </Window>

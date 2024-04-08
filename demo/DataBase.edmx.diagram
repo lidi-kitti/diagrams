@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fccceace967b42efa1532a57e7a950df" Name="Diagram1">
+        <EntityTypeShape EntityType="Demo_exModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo_exModel.Запчасти" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo_exModel.Заявки" Width="1.5" PointX="6" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo_exModel.Неисправности" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo_exModel.Оборудование" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo_exModel.Пользователи" Width="1.5" PointX="3.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo_exModel.Роль" Width="1.5" PointX="1.5" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo_exModel.Статус" Width="1.5" PointX="3.75" PointY="10.625" IsExpanded="true" />
+        <AssociationConnector Association="Demo_exModel.FK_Запчасти_Оборудование" ManuallyRouted="false" />
+        <AssociationConnector Association="Demo_exModel.FK_Заявки_Неисправности" ManuallyRouted="false" />
+        <AssociationConnector Association="Demo_exModel.FK_Заявки_Оборудование" ManuallyRouted="false" />
+        <AssociationConnector Association="Demo_exModel.FK_Заявки_Пользователи" ManuallyRouted="false" />
+        <AssociationConnector Association="Demo_exModel.FK_Заявки_Статус" ManuallyRouted="false" />
+        <AssociationConnector Association="Demo_exModel.FK_Пользователи_Роль" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

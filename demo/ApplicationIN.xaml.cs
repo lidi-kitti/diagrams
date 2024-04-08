@@ -29,5 +29,17 @@ namespace demo
             RegApp regApp = new RegApp();
             regApp.ShowDialog();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string messageBoxText = "Вы уверены, что хотите выйти?";
+            string caption = "Предупреждение";
+            MessageBoxButton button = MessageBoxButton.YesNoCancel;
+            MessageBoxImage icon = MessageBoxImage.Warning;
+            MessageBoxResult result;
+            result = MessageBox.Show(messageBoxText,caption, button,icon,MessageBoxResult.Yes);
+            if (result == MessageBoxResult.Yes) { this.Close(); }
+
+        }
     }
 }
