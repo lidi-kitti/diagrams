@@ -26,6 +26,7 @@ namespace demo
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
             MainWindow mainWindow = new MainWindow();
             this.Close();
             mainWindow.ShowDialog();

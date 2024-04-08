@@ -176,6 +176,13 @@
       <DependentUpon>DataBase.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Запчасти.datasource" />
+    <None Include="Properties\DataSources\Заявки.datasource" />
+    <None Include="Properties\DataSources\Неисправности.datasource" />
+    <None Include="Properties\DataSources\Оборудование.datasource" />
+    <None Include="Properties\DataSources\Пользователи.datasource" />
+    <None Include="Properties\DataSources\Роль.datasource" />
+    <None Include="Properties\DataSources\Статус.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

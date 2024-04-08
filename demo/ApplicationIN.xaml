@@ -12,6 +12,7 @@
         <Label Content="Для просмотра заявок на ремонт" HorizontalAlignment="Center" Margin="0,91,0,0" VerticalAlignment="Top" Height="27" Width="202"/>
         <Label Content="нажмите на копку ниже" HorizontalAlignment="Center" Margin="0,123,0,0" VerticalAlignment="Top" Height="27" Width="150"/>
         <Label Content="Для создания новой заявки" HorizontalAlignment="Center" Margin="0,241,0,0" VerticalAlignment="Top" Height="27" Width="202"/>
+        <Button Content="Выйти" HorizontalAlignment="Center" Margin="0,346,0,0" VerticalAlignment="Top" Height="30" Width="110" Click="Button_Click_1"/>
 
     </Grid>
 </Window>
