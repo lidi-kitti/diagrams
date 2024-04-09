@@ -7,18 +7,18 @@
         mc:Ignorable="d"
         Title="RegApp" Height="450" Width="680">
     <Grid>
-        <StackPanel Margin="20 50 50 50 ">
+        <StackPanel Margin="20,50,27,50">
             <StackPanel Margin="20 50 50 50">
-                <DataGrid x:Name="GridOrders" AutoGenerateColumns="False">
+                <DataGrid x:Name="GridOrders" AutoGenerateColumns="False" Width="528" Height="45">
 
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Номер" Binding="{Binding id_order}"/>
-                        <DataGridTextColumn Header="Дата добавления" Binding="{Binding add_date}"/>
-                        <DataGridTextColumn Header="Проблема" Binding="{Binding problem}"/>
-                        <DataGridTextColumn Header="Оборудование" Binding="{Binding equipment.equipment_name}"/>
-                        <DataGridTextColumn Header="Дефект" Binding="{Binding defect.defect_name}"/>
-                        <DataGridTextColumn Header="Статус заявки" Binding="{Binding status.status_name}"/>
-                        <DataGridTextColumn Header="Сумма" Binding="{Binding cost}"/>
+                        <DataGridTextColumn Header="Номер" Binding="{Binding id_заявки}" Width="*"/>
+                        <DataGridTextColumn Header="Дата добавления" Binding="{Binding Дата_открытия}" Width="*"/>
+                        <DataGridTextColumn Header="Проблема" Binding="{Binding Описание_проблемы}" Width="*"/>
+                        <DataGridTextColumn Header="Оборудование" Binding="{Binding Оборудование.Оборудование1}" Width="*"/>
+                        <DataGridTextColumn Header="Неисправность" Binding="{Binding Неисправность.Неисправность}" Width="*"/>
+                        <DataGridTextColumn Header="Статус заявки" Binding="{Binding Статус.Статус1}" Width="*"/>
+                        <DataGridTextColumn Header="Сумма" Binding="{Binding Итоговая_стоимость}" Width="*"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </StackPanel>

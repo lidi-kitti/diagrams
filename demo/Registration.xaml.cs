@@ -19,9 +19,12 @@ namespace demo
     /// </summary>
     public partial class Registration : Window
     {
+        private Пользователи пользователи = new Пользователи();
+
         public Registration()
         {
             InitializeComponent();
+            DataContext = пользователи;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
