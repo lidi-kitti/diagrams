@@ -9,12 +9,13 @@
     <Grid Background="AliceBlue">
         <Button Content="Зарегистрироваться" HorizontalAlignment="Center" Margin="0,245,0,0" VerticalAlignment="Top" Height="40" Width="160" Click="Button_Click"/>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="276,302,0,0" VerticalAlignment="Top" Height="28" Width="80" Click="Button_Click_1"/>
-        <TextBox HorizontalAlignment="Left" Margin="168,135,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="168,158,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="168,181,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="168,108,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="168,85,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="168,208,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        
+        <TextBox Text="{Binding Отчество}" HorizontalAlignment="Left" Margin="168,135,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="{Binding Почта}" HorizontalAlignment="Left" Margin="168,158,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="{Binding Пароль}" HorizontalAlignment="Left" Margin="168,181,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="{Binding Фамилия}"  HorizontalAlignment="Left" Margin="168,108,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="{Binding Имя}"  HorizontalAlignment="Left" Margin="168,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="{Binding Пароль}"  HorizontalAlignment="Left" Margin="168,208,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
         <Label Content="Имя" HorizontalAlignment="Left" Margin="67,81,0,0" VerticalAlignment="Top"/>
         <Label Content="Фамилия" HorizontalAlignment="Left" Margin="67,104,0,0" VerticalAlignment="Top"/>
         <Label Content="Отчество" HorizontalAlignment="Left" Margin="67,131,0,0" VerticalAlignment="Top"/>

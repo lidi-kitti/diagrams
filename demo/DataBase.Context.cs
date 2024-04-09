@@ -15,11 +15,17 @@ namespace demo
     
     public partial class Demo_exEntities : DbContext
     {
+        private static Demo_exEntities context;
         public Demo_exEntities()
             : base("name=Demo_exEntities")
         {
         }
-    
+        public static Demo_exEntities GetContext()
+        {
+            if (context == null)
+                context = new Demo_exEntities();
+            return context;
+        }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

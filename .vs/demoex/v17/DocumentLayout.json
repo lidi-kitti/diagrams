@@ -1,66 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\diagrams\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\source\\repos\\diagrams\\demo\\regapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\regapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\registration.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\registration.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\applicationin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\applicationin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\applicationin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\applicationin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|c:\\users\\user\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0448\u0430\u0440\u0430\u0433\u0430\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\database.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\database.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\database.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\database.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\database.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\database.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\database.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\database.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\regapp.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\source\\repos\\diagrams\\demo\\regapp.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\regapp.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\signin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\signin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\source\\repos\\diagrams\\demo\\applicationin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\applicationin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\signin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\signin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\source\\repos\\diagrams\\demo\\applicationin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\applicationin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\regapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\regapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|c:\\users\\user\\source\\repos\\diagrams\\demo\\registration.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\registration.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|c:\\users\\user\\source\\repos\\diagrams\\demo\\database.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\database.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\source\\repos\\diagrams\\demo\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\source\\repos\\diagrams\\demo\\database.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\database.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\source\\repos\\diagrams\\demo\\database.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\database.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\source\\repos\\diagrams\\demo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\source\\repos\\diagrams\\demo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\source\\repos\\diagrams\\demo\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,163 +58,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DataBase.edmx.diagram",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\DataBase.edmx.diagram",
-              "RelativeDocumentMoniker": "demo\\DataBase.edmx.diagram",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\DataBase.edmx.diagram",
-              "RelativeToolTip": "demo\\DataBase.edmx.diagram",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAkwBgAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-08T18:21:14.401Z",
+              "DocumentIndex": 5,
+              "Title": "DataBase.Context.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\DataBase.Context.cs",
+              "RelativeDocumentMoniker": "demo\\DataBase.Context.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\DataBase.Context.cs",
+              "RelativeToolTip": "demo\\DataBase.Context.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T09:26:24.026Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "DataBase.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\DataBase.Designer.cs",
-              "RelativeDocumentMoniker": "demo\\DataBase.Designer.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\DataBase.Designer.cs",
-              "RelativeToolTip": "demo\\DataBase.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T18:21:12.684Z"
+              "Title": "DataBase.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\DataBase.edmx",
+              "RelativeDocumentMoniker": "demo\\DataBase.edmx",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\DataBase.edmx [Diagram1]",
+              "RelativeToolTip": "demo\\DataBase.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-04-09T09:15:51.213Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "DataBase.Context.tt",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\DataBase.Context.tt",
-              "RelativeDocumentMoniker": "demo\\DataBase.Context.tt",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\DataBase.Context.tt",
-              "RelativeToolTip": "demo\\DataBase.Context.tt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-04-08T18:21:11.741Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "DataBase.tt",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\DataBase.tt",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\DataBase.tt",
               "RelativeDocumentMoniker": "demo\\DataBase.tt",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\DataBase.tt",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\DataBase.tt",
               "RelativeToolTip": "demo\\DataBase.tt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-04-08T18:21:05.33Z"
+              "WhenOpened": "2024-04-09T09:15:50.309Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Registration.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\Registration.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\Registration.xaml.cs",
               "RelativeDocumentMoniker": "demo\\Registration.xaml.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\Registration.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\Registration.xaml.cs",
               "RelativeToolTip": "demo\\Registration.xaml.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAA2wCoAAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T18:00:54.14Z",
+              "WhenOpened": "2024-04-09T08:28:44.108Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Registration.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\Registration.xaml",
-              "RelativeDocumentMoniker": "demo\\Registration.xaml",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\Registration.xaml",
-              "RelativeToolTip": "demo\\Registration.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-08T17:56:46.584Z",
+              "Title": "RegApp.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\RegApp.xaml.cs",
+              "RelativeDocumentMoniker": "demo\\RegApp.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\RegApp.xaml.cs",
+              "RelativeToolTip": "demo\\RegApp.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T07:41:08.016Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RegApp.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\RegApp.xaml.cs",
-              "RelativeDocumentMoniker": "demo\\RegApp.xaml.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\RegApp.xaml.cs*",
-              "RelativeToolTip": "demo\\RegApp.xaml.cs*",
-              "ViewState": "AQIAABMAAAAAAAAAAAAUwB0AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T17:45:41.084Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 0,
               "Title": "RegApp.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\RegApp.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\RegApp.xaml",
               "RelativeDocumentMoniker": "demo\\RegApp.xaml",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\RegApp.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\RegApp.xaml",
               "RelativeToolTip": "demo\\RegApp.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-08T17:31:04.775Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SignIn.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\SignIn.xaml.cs",
-              "RelativeDocumentMoniker": "demo\\SignIn.xaml.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\SignIn.xaml.cs*",
-              "RelativeToolTip": "demo\\SignIn.xaml.cs*",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAUwB0AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T17:22:49.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "SignIn.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\SignIn.xaml",
-              "RelativeDocumentMoniker": "demo\\SignIn.xaml",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\SignIn.xaml",
-              "RelativeToolTip": "demo\\SignIn.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-08T17:17:40.392Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "demo\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\MainWindow.xaml.cs",
-              "RelativeToolTip": "demo\\MainWindow.xaml.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAABoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T10:54:37.532Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "demo\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\MainWindow.xaml",
-              "RelativeToolTip": "demo\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-04T10:54:32.064Z",
+              "WhenOpened": "2024-04-09T07:37:15.424Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Registration.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\Registration.xaml",
+              "RelativeDocumentMoniker": "demo\\Registration.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\Registration.xaml",
+              "RelativeToolTip": "demo\\Registration.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-09T07:21:13.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "demo\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\MainWindow.xaml.cs",
+              "RelativeToolTip": "demo\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T10:54:37.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "demo\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\MainWindow.xaml",
+              "RelativeToolTip": "demo\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-04T10:54:32.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ApplicationIN.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\ApplicationIN.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\ApplicationIN.xaml",
               "RelativeDocumentMoniker": "demo\\ApplicationIN.xaml",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\ApplicationIN.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\ApplicationIN.xaml",
               "RelativeToolTip": "demo\\ApplicationIN.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-04-04T10:51:16.776Z",
@@ -236,27 +189,26 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "ApplicationIN.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\ApplicationIN.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\ApplicationIN.xaml.cs",
               "RelativeDocumentMoniker": "demo\\ApplicationIN.xaml.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\ApplicationIN.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\ApplicationIN.xaml.cs",
               "RelativeToolTip": "demo\\ApplicationIN.xaml.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAIwCgAAABBAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAIAwwB0AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T10:48:44.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "App.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\App.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\App.cs",
               "RelativeDocumentMoniker": "demo\\App.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0428\u0410\u0420\u0410\u0413\u0410\\3 \u043A\u0443\u0440\u0441\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0442\u0440\u043F\u043E\\dexam\\\u0434\u0435\u043C\u043E\\demo\\App.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\diagrams\\demo\\App.cs",
               "RelativeToolTip": "demo\\App.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T10:50:17.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T10:50:17.64Z"
             }
           ]
         }
