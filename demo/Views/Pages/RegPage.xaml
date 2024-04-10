@@ -6,26 +6,42 @@
       xmlns:local="clr-namespace:demo.Views.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Регистрация">
+      Title="Регистрация" >
 
-    <Grid Margin="0,0,350,0">
-        
-        <Button Content="Зарегистрироваться" HorizontalAlignment="Center" Margin="0,245,0,0" VerticalAlignment="Top" Height="40" Width="160" />
-        <Button Content="Назад" HorizontalAlignment="Left" Margin="276,302,0,0" VerticalAlignment="Top" Height="28" Width="80"/>
-
-        <TextBox Name ="lastname" Text="{Binding Отчество}" HorizontalAlignment="Left" Margin="168,135,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <TextBox Name ="email"  Text="{Binding Почта}" HorizontalAlignment="Left" Margin="168,158,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <TextBox Name ="password" Text="{Binding Пароль}" HorizontalAlignment="Left" Margin="168,181,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="secondname" Text="{Binding Фамилия}"  HorizontalAlignment="Left" Margin="168,108,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="name" Text="{Binding Имя}"  HorizontalAlignment="Left" Margin="168,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="password2" Text="{Binding Пароль}"  HorizontalAlignment="Left" Margin="168,208,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <Label Content="Имя" HorizontalAlignment="Left" Margin="67,81,0,0" VerticalAlignment="Top"/>
-        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="67,104,0,0" VerticalAlignment="Top"/>
-        <Label Content="Отчество" HorizontalAlignment="Left" Margin="67,131,0,0" VerticalAlignment="Top"/>
-        <Label Content="Почта" HorizontalAlignment="Left" Margin="67,154,0,0" VerticalAlignment="Top"/>
-        <Label Content="Пароль" HorizontalAlignment="Left" Margin="67,177,0,0" VerticalAlignment="Top"/>
-        <Label Content="Пароль еще раз" HorizontalAlignment="Left" Margin="67,204,0,0" VerticalAlignment="Top"/>
-        <Label Content="РЕГИСТРАЦИЯ" HorizontalAlignment="Center" Margin="0,41,0,0" VerticalAlignment="Top"/>
-       
+    <Grid>
+        <Grid Background="Gray"  >
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin ="0 0 0 0 ">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Label Width="75">Имя</Label>
+                    <TextBox x:Name="Name" Width="150" Height="22"/>
+                </StackPanel>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Label Width="75">Фамилия</Label>
+                    <TextBox  x:Name="SecondName" Width="150" Height="22"/>
+                </StackPanel>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Label Width="75">Отчество</Label>
+                    <TextBox x:Name="LastName" Width="150" Height="22"/>
+                </StackPanel>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Label Width="75">Почта</Label>
+                    <TextBox x:Name="Email" Width="150" Height="22"/>
+                </StackPanel>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Label Width="75">Пароль</Label>
+                    <TextBox x:Name="Password" Width="150" Height="22"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Horizontal" Height="199" Margin="0,225,0,0">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Button Content="Зарегистрироваться" HorizontalAlignment="Center" Height="30" Width="144" Click="Button_Click"/>
+                </StackPanel>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Margin ="-145 130 0 0 ">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal"  >
+                        <Button Content="На страницу входа" Height="30" Width="117" Click="Button_Click_1" />
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>

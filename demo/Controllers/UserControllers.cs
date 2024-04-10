@@ -19,7 +19,7 @@ namespace demo.Controllers
             }
             catch (Exception ex) { throw new Exception($"{ex.Message}"); }
         }
-        public Пользователи CreateNewUser()
+        public Пользователи CreateNewUser(string name, string secondname, string lastname, string email, string password)
         {
             try
             {
@@ -48,7 +48,7 @@ namespace demo.Controllers
                 var user = connection.auth.Пользователи.Where(x => x.Почта == username && x.Пароль == password).First();
                 return user;
             }
-            catch (Exception ex )
+            catch (Exception ex)
             {
                 throw new Exception($"{ex.Message}");
             }
