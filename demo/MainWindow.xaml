@@ -5,11 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:demo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="400">
-    <Grid Background="AliceBlue">
-        <Button Content="Войти" HorizontalAlignment="Center" Margin="0,157,0,0" VerticalAlignment="Top" Click="Button_Click_1" Height="35" Width="157"/>
-        <Button Content="Зарегистрироваться" HorizontalAlignment="Center" Margin="0,213,0,0" VerticalAlignment="Top" Click="Button_Click" Height="37" Width="156"/>
-        <TextBlock HorizontalAlignment="Left" Margin="95,52,0,0" TextWrapping="Wrap" Text="Вас приветсвует ТехСервис для работы с приложением необходимо авторизоваться, если аккаунт отсутвует, то выбирайте опцию Зарегистрироваться" VerticalAlignment="Top" Height="73" Width="238"/>
-
+        Title="{Binding ElementName=AuthFrame, Path=Content.Title}" Height="450" Width="600" Loaded="WindowLoaded">
+    <Grid >
+        <Frame x:Name="AuthFrame" NavigationUIVisibility="Hidden" ContentRendered="AuthPageContentRendered"></Frame>
     </Grid>
 </Window>

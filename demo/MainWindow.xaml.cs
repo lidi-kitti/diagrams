@@ -1,4 +1,5 @@
-﻿using System;
+﻿using demo.Views.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,20 +26,16 @@ namespace demo
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+       
+
+        private void WindowLoaded(object sender, RoutedEventArgs e)
         {
-            Registration registration = new Registration();
-            this.Close();
-            registration.ShowDialog();
-          
+            AuthFrame.NavigationService.Navigate(new AuthPage());
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void AuthPageContentRendered(object sender, EventArgs e)
         {
-            SignIn signin = new SignIn();
-            this.Close();
-            signin.ShowDialog();
-           
+
         }
     }
 }
