@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Demo_exModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Запчасти">
+    <Key>
+      <PropertyRef Name="id_запчасти" />
+    </Key>
+    <Property Name="id_запчасти" Type="Int32" Nullable="false" />
+    <Property Name="Название_запчасти" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_оборудования" Type="Int32" />
+    <Property Name="Стоимость" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Наличие_шт" Type="Int32" />
+    <NavigationProperty Name="Оборудование" Relationship="Self.FK_Запчасти_Оборудование" FromRole="Запчасти" ToRole="Оборудование" />
+  </EntityType>
+  <EntityType Name="Заявки">
+    <Key>
+      <PropertyRef Name="id_заявки" />
+    </Key>
+    <Property Name="id_заявки" Type="Int32" Nullable="false" />
+    <Property Name="Дата_открытия" Type="DateTime" Precision="0" />
+    <Property Name="Описание_проблемы" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="id_оборудования" Type="Int32" />
+    <Property Name="id_неисправности" Type="Int32" />
+    <Property Name="id_клиента" Type="Int32" />
+    <Property Name="id_исполнителя" Type="Int32" />
+    <Property Name="id_статуса" Type="Int32" />
+    <Property Name="Итоговая_стоимость" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Дата_закрытия" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Неисправности" Relationship="Self.FK_Заявки_Неисправности" FromRole="Заявки" ToRole="Неисправности" />
+    <NavigationProperty Name="Оборудование" Relationship="Self.FK_Заявки_Оборудование" FromRole="Заявки" ToRole="Оборудование" />
+    <NavigationProperty Name="Пользователи" Relationship="Self.FK_Заявки_Пользователи" FromRole="Заявки" ToRole="Пользователи" />
+    <NavigationProperty Name="Статус" Relationship="Self.FK_Заявки_Статус" FromRole="Заявки" ToRole="Статус" />
+  </EntityType>
+  <EntityType Name="Неисправности">
+    <Key>
+      <PropertyRef Name="id_неисправности" />
+    </Key>
+    <Property Name="id_неисправности" Type="Int32" Nullable="false" />
+    <Property Name="Неисправность" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Заявки" Relationship="Self.FK_Заявки_Неисправности" FromRole="Неисправности" ToRole="Заявки" />
+  </EntityType>
+  <EntityType Name="Оборудование">
+    <Key>
+      <PropertyRef Name="id_оборудования" />
+    </Key>
+    <Property Name="id_оборудования" Type="Int32" Nullable="false" />
+    <Property Name="Оборудование1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Серийный_номер" Type="Int32" />
+    <NavigationProperty Name="Запчасти" Relationship="Self.FK_Запчасти_Оборудование" FromRole="Оборудование" ToRole="Запчасти" />
+    <NavigationProperty Name="Заявки" Relationship="Self.FK_Заявки_Оборудование" FromRole="Оборудование" ToRole="Заявки" />
+  </EntityType>
+  <EntityType Name="Пользователи">
+    <Key>
+      <PropertyRef Name="id_пользователя" />
+    </Key>
+    <Property Name="id_пользователя" Type="Int32" Nullable="false" />
+    <Property Name="Фамилия" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Имя" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Отчество" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Почта" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Пароль" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_роли" Type="Int32" />
+    <NavigationProperty Name="Заявки" Relationship="Self.FK_Заявки_Пользователи" FromRole="Пользователи" ToRole="Заявки" />
+    <NavigationProperty Name="Роль" Relationship="Self.FK_Пользователи_Роль" FromRole="Пользователи" ToRole="Роль" />
+  </EntityType>
+  <EntityType Name="Роль">
+    <Key>
+      <PropertyRef Name="id_роли" />
+    </Key>
+    <Property Name="id_роли" Type="Int32" Nullable="false" />
+    <Property Name="Роль1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Пользователи" Relationship="Self.FK_Пользователи_Роль" FromRole="Роль" ToRole="Пользователи" />
+  </EntityType>
+  <EntityType Name="Статус">
+    <Key>
+      <PropertyRef Name="id_статуса" />
+    </Key>
+    <Property Name="id_статуса" Type="Int32" Nullable="false" />
+    <Property Name="Статус1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Заявки" Relationship="Self.FK_Заявки_Статус" FromRole="Статус" ToRole="Заявки" />
+  </EntityType>
+  <Association Name="FK_Запчасти_Оборудование">
+    <End Role="Оборудование" Type="Self.Оборудование" Multiplicity="0..1" />
+    <End Role="Запчасти" Type="Self.Запчасти" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Оборудование">
+        <PropertyRef Name="id_оборудования" />
+      </Principal>
+      <Dependent Role="Запчасти">
+        <PropertyRef Name="id_оборудования" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Заявки_Неисправности">
+    <End Role="Неисправности" Type="Self.Неисправности" Multiplicity="0..1" />
+    <End Role="Заявки" Type="Self.Заявки" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Неисправности">
+        <PropertyRef Name="id_неисправности" />
+      </Principal>
+      <Dependent Role="Заявки">
+        <PropertyRef Name="id_неисправности" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Заявки_Оборудование">
+    <End Role="Оборудование" Type="Self.Оборудование" Multiplicity="0..1" />
+    <End Role="Заявки" Type="Self.Заявки" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Оборудование">
+        <PropertyRef Name="id_оборудования" />
+      </Principal>
+      <Dependent Role="Заявки">
+        <PropertyRef Name="id_оборудования" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Заявки_Пользователи">
+    <End Role="Пользователи" Type="Self.Пользователи" Multiplicity="0..1" />
+    <End Role="Заявки" Type="Self.Заявки" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Пользователи">
+        <PropertyRef Name="id_пользователя" />
+      </Principal>
+      <Dependent Role="Заявки">
+        <PropertyRef Name="id_клиента" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Заявки_Статус">
+    <End Role="Статус" Type="Self.Статус" Multiplicity="0..1" />
+    <End Role="Заявки" Type="Self.Заявки" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Статус">
+        <PropertyRef Name="id_статуса" />
+      </Principal>
+      <Dependent Role="Заявки">
+        <PropertyRef Name="id_статуса" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Пользователи_Роль">
+    <End Role="Роль" Type="Self.Роль" Multiplicity="0..1" />
+    <End Role="Пользователи" Type="Self.Пользователи" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Роль">
+        <PropertyRef Name="id_роли" />
+      </Principal>
+      <Dependent Role="Пользователи">
+        <PropertyRef Name="id_роли" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Demo_exEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Запчасти" EntityType="Self.Запчасти" />
+    <EntitySet Name="Заявки" EntityType="Self.Заявки" />
+    <EntitySet Name="Неисправности" EntityType="Self.Неисправности" />
+    <EntitySet Name="Оборудование" EntityType="Self.Оборудование" />
+    <EntitySet Name="Пользователи" EntityType="Self.Пользователи" />
+    <EntitySet Name="Роль" EntityType="Self.Роль" />
+    <EntitySet Name="Статус" EntityType="Self.Статус" />
+    <AssociationSet Name="FK_Запчасти_Оборудование" Association="Self.FK_Запчасти_Оборудование">
+      <End Role="Оборудование" EntitySet="Оборудование" />
+      <End Role="Запчасти" EntitySet="Запчасти" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Заявки_Неисправности" Association="Self.FK_Заявки_Неисправности">
+      <End Role="Неисправности" EntitySet="Неисправности" />
+      <End Role="Заявки" EntitySet="Заявки" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Заявки_Оборудование" Association="Self.FK_Заявки_Оборудование">
+      <End Role="Оборудование" EntitySet="Оборудование" />
+      <End Role="Заявки" EntitySet="Заявки" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Заявки_Пользователи" Association="Self.FK_Заявки_Пользователи">
+      <End Role="Пользователи" EntitySet="Пользователи" />
+      <End Role="Заявки" EntitySet="Заявки" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Заявки_Статус" Association="Self.FK_Заявки_Статус">
+      <End Role="Статус" EntitySet="Статус" />
+      <End Role="Заявки" EntitySet="Заявки" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Пользователи_Роль" Association="Self.FK_Пользователи_Роль">
+      <End Role="Роль" EntitySet="Роль" />
+      <End Role="Пользователи" EntitySet="Пользователи" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -63,61 +63,72 @@
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Compile Include="ApplicationIN.xaml.cs">
-      <DependentUpon>ApplicationIN.xaml</DependentUpon>
+    <Compile Include="Controllers\UserControllers.cs" />
+    <Compile Include="Models\Connection.cs" />
+    <Compile Include="Views\Pages\AuthPage.xaml.cs">
+      <DependentUpon>AuthPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DataBase.Context.cs">
+    <Compile Include="Views\Pages\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataBase.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataBase.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataBase.cs">
+    <Compile Include="Models\DataBase.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataBase.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataBase.Designer.cs">
+    <Compile Include="Models\DataBase.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataBase.edmx</DependentUpon>
     </Compile>
-    <Compile Include="RegApp.xaml.cs">
-      <DependentUpon>RegApp.xaml</DependentUpon>
+    <Compile Include="Views\Pages\RegPage.xaml.cs">
+      <DependentUpon>RegPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Registration.xaml.cs">
-      <DependentUpon>Registration.xaml</DependentUpon>
+    <Compile Include="Views\Pages\TableOfApplicationPage.xaml.cs">
+      <DependentUpon>TableOfApplicationPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SignIn.xaml.cs">
-      <DependentUpon>SignIn.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="StatusApplication.xaml.cs">
-      <DependentUpon>StatusApplication.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagrams.cs">
+    <Compile Include="Models\sysdiagrams.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
     </Compile>
-    <Compile Include="Запчасти.cs">
+    <Compile Include="Models\Запчасти.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
     </Compile>
-    <Compile Include="Заявки.cs">
+    <Compile Include="Models\Заявки.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
     </Compile>
-    <Compile Include="Неисправности.cs">
+    <Compile Include="Models\Неисправности.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
     </Compile>
-    <Compile Include="Оборудование.cs">
+    <Compile Include="Models\Оборудование.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
     </Compile>
-    <Compile Include="Пользователи.cs">
+    <Compile Include="Models\Пользователи.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
     </Compile>
-    <Compile Include="Роль.cs">
+    <Compile Include="Models\Роль.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
     </Compile>
-    <Compile Include="Статус.cs">
+    <Compile Include="Models\Статус.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
     </Compile>
-    <Page Include="ApplicationIN.xaml">
+    <Page Include="Views\Pages\AuthPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\HomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\RegPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\TableOfApplicationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -133,22 +144,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="RegApp.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Registration.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SignIn.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="StatusApplication.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -168,11 +163,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="DataBase.edmx">
+    <EntityDeploy Include="Models\DataBase.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DataBase.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="DataBase.edmx.diagram">
+    <None Include="Models\DataBase.edmx.diagram">
       <DependentUpon>DataBase.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -192,12 +187,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataBase.Context.tt">
+    <Content Include="Models\DataBase.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DataBase.Context.cs</LastGenOutput>
       <DependentUpon>DataBase.edmx</DependentUpon>
     </Content>
-    <Content Include="DataBase.tt">
+    <Content Include="Models\DataBase.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DataBase.edmx</DependentUpon>
       <LastGenOutput>DataBase.cs</LastGenOutput>
@@ -206,5 +201,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
