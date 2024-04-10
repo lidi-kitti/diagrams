@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using demo.Controllers;
 namespace demo.Views.Pages
 {
     /// <summary>
@@ -29,8 +29,7 @@ namespace demo.Views.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
+            
                 if (!String.IsNullOrEmpty(Login.Text) && !String.IsNullOrEmpty(Password.Text))
                 {
                     var user = userController.SignInUser(Login.Text.Trim().ToLower(), Password.Text.Trim().ToLower());
@@ -42,16 +41,13 @@ namespace demo.Views.Pages
                 {
                     MessageBox.Show("Не все поля заполнены", "Системная ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Пользователь не найден", "Системная ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
+            
+            
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new RegPage());
         }
     }
 }

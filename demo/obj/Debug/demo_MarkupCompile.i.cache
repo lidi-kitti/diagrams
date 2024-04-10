@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\user\source\repos\diagrams\demo\obj\Debug\
+C:\Users\user\Source\Repos\diagrams\demo\obj\Debug\
 demo
 none
 false
 DEBUG;TRACE
-C:\Users\user\source\repos\diagrams\demo\App.xaml
+C:\Users\user\Source\Repos\diagrams\demo\App.xaml
 5438768857
 2430569841
 231315144999
-18-449281281
+18-218325889
 Views\Pages\AuthPage.xaml;Views\Pages\HomePage.xaml;Views\Pages\RegPage.xaml;Views\Pages\TableOfApplicationPage.xaml;MainWindow.xaml;
 
 False
