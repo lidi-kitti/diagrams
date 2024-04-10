@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace demo
 {
@@ -26,9 +27,40 @@ namespace demo
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ApplicationIN applicationIN = new ApplicationIN();
-            this.Close();
-            applicationIN.ShowDialog();
+            if (Login.Text==null||Password.Text==null)
+            {
+                MessageBox.Show("Заполните все поля");
+            }
+            else
+            {
+                App.Global = Login.Text;
+                var user = App.Context.Пользователи.FirstOrDefault(p => p.Почта == Login.Text && p.Пароль == Password.Text);
+                if (user!=null)
+                {
+                
+                    App.CurrentUser = user;
+                    if (App.CurrentUser.id_роли == '1')
+                    {
+                        MessageBox.Show("Вы клиент");
+                        ApplicationIN applicationIN = new ApplicationIN();
+                        this.Close();
+                        applicationIN.ShowDialog();
+                    }
+                    if (App.CurrentUser.id_роли == '2')
+                    {
+                        MessageBox.Show("Вы администратор");
+                        ApplicationIN applicationIN = new ApplicationIN();
+                        this.Close();
+                        applicationIN.ShowDialog();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Попробуйте еще раз", "Ошибка");
+                }
+            }
+            
+           
 
         }
 

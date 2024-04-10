@@ -31,5 +31,10 @@ namespace demo
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Заявки> Заявки { get; set; }
         public virtual Роль Роль { get; set; }
+
+        internal static object init()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

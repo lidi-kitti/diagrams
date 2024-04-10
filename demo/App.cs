@@ -13,5 +13,10 @@ namespace demo
     /// </summary>
     public partial class App : Application
     {
+        public static Demo_exEntities GetContext { get; } = new Demo_exEntities();
+        public static Demo_exEntities Context
+        {  get; set; }
+        public static Пользователи CurrentUser = null;
+        public static string Global {  get; set; }
     }
 }
