@@ -18,6 +18,7 @@ namespace demo
         public static DemoEntities Context
         {  get; set; }
         public static Пользователи currentUser = null;
+        public static Заявки currentApplication = null;
         public static string Global {  get; set; }
     }
 }

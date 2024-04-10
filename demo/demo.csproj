@@ -63,6 +63,7 @@
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Compile Include="Controllers\ApplicationControllers.cs" />
     <Compile Include="Controllers\UserControllers.cs" />
     <Compile Include="Models\Connection.cs" />
     <Compile Include="Models\DataBase.Context.cs">
@@ -104,8 +105,20 @@
     <Compile Include="Views\Pages\AuthPage.xaml.cs">
       <DependentUpon>AuthPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Pages\EmployeePage.xaml.cs">
+      <DependentUpon>EmployeePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\HomePageClient.xaml.cs">
+      <DependentUpon>HomePageClient.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\NewApplicationPage.xaml.cs">
+      <DependentUpon>NewApplicationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\PartsPage.xaml.cs">
+      <DependentUpon>PartsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\RegPage.xaml.cs">
       <DependentUpon>RegPage.xaml</DependentUpon>
@@ -113,11 +126,33 @@
     <Compile Include="Views\Pages\TableOfApplicationPage.xaml.cs">
       <DependentUpon>TableOfApplicationPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Pages\TableOfMalfunctionPage.xaml.cs">
+      <DependentUpon>TableOfMalfunctionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\TapleOfEquipmentPage.xaml.cs">
+      <DependentUpon>TapleOfEquipmentPage.xaml</DependentUpon>
+    </Compile>
     <Page Include="Views\Pages\AuthPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Pages\EmployeePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Pages\HomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\HomePageClient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\NewApplicationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\PartsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -141,6 +176,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\Pages\TableOfMalfunctionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\TapleOfEquipmentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

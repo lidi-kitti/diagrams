@@ -9,6 +9,6 @@ namespace demo.Models
     internal class Connection
     {
         public DemoEntities auth = new DemoEntities();
-
+        int k = 5;
     }
 }

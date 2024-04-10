@@ -1,0 +1,18 @@
+﻿<Page x:Class="demo.Views.Pages.HomePageClient"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:demo.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HomePageClient" >
+
+    <Grid Background="AliceBlue">
+        <Label Content="Для создания новой заявки на починку оборудования" HorizontalAlignment="Center" VerticalAlignment="Top" Height="42" Width="314" Margin="0,70,0,0"/>
+
+        <Button Content="Новая заявка" HorizontalAlignment="Center" Margin="0,135,0,0" VerticalAlignment="Top" Height="30" Width="110" Click="Button_Click"/>
+        <Button Content="Выйти" HorizontalAlignment="Center" Margin="0,195,0,0" VerticalAlignment="Top" Height="30" Width="110" Click="Button_Click_1"/>
+
+    </Grid>
+</Page>

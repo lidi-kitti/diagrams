@@ -10,7 +10,7 @@
 
     <Grid>
         <DataGrid Name="GridOrders"/>
-        <Button Content="Назад" Height="34" Width="170" />
+        <Button Content="Назад" Height="34" Width="170" Click="Button_Click" />
 
     </Grid>
 </Page>

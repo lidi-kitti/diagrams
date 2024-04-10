@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace demo.Controllers
 {
     internal class UserControllers
     {
         Connection connection = new Connection();
+        private int kp=6;
         public List<Пользователи> GetUsers()
         {
             try
@@ -25,16 +27,19 @@ namespace demo.Controllers
             {
                 Пользователи users = new Пользователи
                 {
+                    id_пользователя = kp + 1,
                     Фамилия = string.Empty,
                     Имя = string.Empty,
                     Отчество = string.Empty,
                     Почта = string.Empty,
                     Пароль = string.Empty,
-                    id_роли = 1,
+                    id_роли = 1
+                    
 
                 };
                 connection.auth.Пользователи.Add(users);
                 connection.auth.SaveChanges();
+                MessageBox.Show("Пользователь зарегистрирован!");
                 return users;
             }
             catch (Exception ex) 

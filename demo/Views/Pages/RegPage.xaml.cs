@@ -35,7 +35,8 @@ namespace demo.Views.Pages
                 {
                     var user = userControllers.CreateNewUser(Name.Text, SecondName.Text,LastName.Text, Email.Text,Password.Text);
                     App.currentUser = user;
-                    this.NavigationService.Navigate(new HomePage());
+                    MessageBox.Show("Успешно зарегистрированы!");
+                    this.NavigationService.Navigate(new AuthPage());
                 } 
                 else
                 {
