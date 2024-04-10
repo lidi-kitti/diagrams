@@ -9,6 +9,7 @@ namespace demo.Models
     internal class Connection
     {
         public DemoEntities auth = new DemoEntities();
+        public scriptDataSet scriptDataSet = new scriptDataSet();
         int k = 5;
     }
 }

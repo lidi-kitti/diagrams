@@ -102,6 +102,11 @@
     <Compile Include="Models\Статус.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
     </Compile>
+    <Compile Include="scriptDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>scriptDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\AuthPage.xaml.cs">
       <DependentUpon>AuthPage.xaml</DependentUpon>
     </Compile>
@@ -212,6 +217,7 @@
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\demo.Models.Connection.datasource" />
+    <None Include="Properties\DataSources\demo.Models.DemoEntities.datasource" />
     <None Include="Properties\DataSources\demo.Models.Demo_exEntities.datasource" />
     <None Include="Properties\DataSources\demo.Models.sysdiagrams.datasource" />
     <None Include="Properties\DataSources\demo.Models.Запчасти.datasource" />
@@ -224,6 +230,17 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="scriptDataSet.xsc">
+      <DependentUpon>scriptDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="scriptDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>scriptDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="scriptDataSet.xss">
+      <DependentUpon>scriptDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
