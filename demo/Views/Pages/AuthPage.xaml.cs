@@ -33,7 +33,7 @@ namespace demo.Views.Pages
             {
                 if (!String.IsNullOrEmpty(Login.Text) && !String.IsNullOrEmpty(Password.Text))
                 {
-                    var user = userController.SignInUser(Login.Text.Trim().ToLower(), Password.Text.Trim().ToLower());
+                    var user = userController.SignInUser(Login.Text, Password.Text);
                     App.currentUser = user;
                     this.NavigationService.Navigate(new HomePage());
 

@@ -8,7 +8,7 @@ namespace demo.Models
 {
     internal class Connection
     {
-        public Demo_exEntities auth = new Demo_exEntities();
+        public DemoEntities auth = new DemoEntities();
 
     }
 }

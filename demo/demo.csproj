@@ -65,12 +65,6 @@
     </ApplicationDefinition>
     <Compile Include="Controllers\UserControllers.cs" />
     <Compile Include="Models\Connection.cs" />
-    <Compile Include="Views\Pages\AuthPage.xaml.cs">
-      <DependentUpon>AuthPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Pages\HomePage.xaml.cs">
-      <DependentUpon>HomePage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Models\DataBase.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -85,15 +79,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataBase.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Pages\RegPage.xaml.cs">
-      <DependentUpon>RegPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Pages\TableOfApplicationPage.xaml.cs">
-      <DependentUpon>TableOfApplicationPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sysdiagrams.cs">
-      <DependentUpon>DataBase.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Запчасти.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
@@ -115,6 +100,18 @@
     </Compile>
     <Compile Include="Models\Статус.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\AuthPage.xaml.cs">
+      <DependentUpon>AuthPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\RegPage.xaml.cs">
+      <DependentUpon>RegPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\TableOfApplicationPage.xaml.cs">
+      <DependentUpon>TableOfApplicationPage.xaml</DependentUpon>
     </Compile>
     <Page Include="Views\Pages\AuthPage.xaml">
       <SubType>Designer</SubType>
@@ -187,10 +184,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Models\DataBase.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>DataBase.Context.cs</LastGenOutput>
       <DependentUpon>DataBase.edmx</DependentUpon>
+      <LastGenOutput>DataBase.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\DataBase.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -198,9 +198,5 @@
       <LastGenOutput>DataBase.cs</LastGenOutput>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
