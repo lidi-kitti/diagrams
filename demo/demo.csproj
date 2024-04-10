@@ -171,13 +171,16 @@
       <DependentUpon>DataBase.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\Запчасти.datasource" />
-    <None Include="Properties\DataSources\Заявки.datasource" />
-    <None Include="Properties\DataSources\Неисправности.datasource" />
-    <None Include="Properties\DataSources\Оборудование.datasource" />
-    <None Include="Properties\DataSources\Пользователи.datasource" />
-    <None Include="Properties\DataSources\Роль.datasource" />
-    <None Include="Properties\DataSources\Статус.datasource" />
+    <None Include="Properties\DataSources\demo.Models.Connection.datasource" />
+    <None Include="Properties\DataSources\demo.Models.Demo_exEntities.datasource" />
+    <None Include="Properties\DataSources\demo.Models.sysdiagrams.datasource" />
+    <None Include="Properties\DataSources\demo.Models.Запчасти.datasource" />
+    <None Include="Properties\DataSources\demo.Models.Заявки.datasource" />
+    <None Include="Properties\DataSources\demo.Models.Неисправности.datasource" />
+    <None Include="Properties\DataSources\demo.Models.Оборудование.datasource" />
+    <None Include="Properties\DataSources\demo.Models.Пользователи.datasource" />
+    <None Include="Properties\DataSources\demo.Models.Роль.datasource" />
+    <None Include="Properties\DataSources\demo.Models.Статус.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
