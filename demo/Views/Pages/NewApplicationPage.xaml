@@ -9,7 +9,7 @@
       Title="NewApplicationPage">
 
     <Grid Background="Gray"  >
-        <StackPanel Margin=" 50 50 50 50" Background="Gray">
+        <StackPanel Margin="50,0,50,0" Background="Gray" Height="350" VerticalAlignment="Center">
             <StackPanel Margin=" 20 20 20 20" Width="400" Height="270" Background="Gray" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
 
                 <Label Content="Новая заявка" HorizontalAlignment="Center" />
@@ -19,7 +19,7 @@
 
                     <StackPanel Background="AliceBlue" Width="150" Height="60" VerticalAlignment="Center" HorizontalAlignment="Left"  Margin="30 0 0 0" Orientation="Vertical">
                         <Label Content="Оборудование" HorizontalAlignment="Center"></Label>
-                        <Label Content="Неисправность"  HorizontalAlignment="Center"/>
+                        <Label Content="Неисправности"  HorizontalAlignment="Center"/>
 
 
 
@@ -27,8 +27,8 @@
 
                     <StackPanel Background="AliceBlue" Width="150" Height="60" VerticalAlignment="Center" HorizontalAlignment="Right"  Margin="0" Orientation="Vertical">
 
-                        <ComboBox x:Name="Equipment_cb" SelectedItem="{Binding Заявки.id_оборудования}" SelectionChanged="Equipment_cb_SelectionChanged" DisplayMemberPath="Equipment_name" Margin="3"/>
-                        <ComboBox x:Name="Defect_cb" SelectedItem="{Binding Заявки.id_неисправности}" DisplayMemberPath="Defect_name" Margin="3"/>
+                        <ComboBox x:Name="Equipment_cb" SelectedItem="{Binding Заявки.id_оборудования}" SelectionChanged="Equipment_cb_SelectionChanged"  Margin="3"/>
+                        <ComboBox x:Name="Defect_cb" SelectedItem="{Binding Заявки.id_неисправности}" SelectionChanged="Malfunction_cb_SelectionChanged" Margin="3"/>
 
 
 
@@ -38,15 +38,14 @@
 
                 <StackPanel Orientation="Vertical">
                     <Label Content="Problem"  HorizontalAlignment="Center"/>
-                    <TextBox x:Name="Problem_tb" Text="{Binding Описание}" Width="300" Height="80" Margin="3"/>
+                    <TextBox x:Name="Problem_tb" Text="{Binding Описание_проблемы}" Width="300" Height="80" Margin="3"/>
                 </StackPanel>
 
-                <StackPanel Background="Gray" Height="50" >
+                <StackPanel Background="Gray" Height="47" >
                     <Button x:Name="SaveButton" Click="SaveButton_Click" Content="Save" Width="70"  Margin="20" Background="AliceBlue"/>
                 </StackPanel>
             </StackPanel>
-
-            <Button x:Name="BackButton" Content="Закрыть" Click="BackButton_Click" HorizontalAlignment="Right" Width="50" Height="20" Margin="0 0 20 0" Background="AliceBlue"/>
+            <Button x:Name="BackButton" Content="Закрыть" Click="BackButton_Click" Width="50" Height="20" Background="AliceBlue"/>
         </StackPanel>
 
 

@@ -21,7 +21,7 @@ namespace demo.Views.Pages
     /// </summary>
     public partial class TableOfApplicationPage : Page
     {
-        DemoEntities exEntities = new DemoEntities();
+        DemoEntities1 exEntities = new DemoEntities1();
         public TableOfApplicationPage()
         {
             InitializeComponent();

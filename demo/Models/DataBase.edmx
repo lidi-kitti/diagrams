@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Хранилище DataBaseModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="Хранилище scriptModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Запчасти">
           <Key>
             <PropertyRef Name="id_запчасти" />
@@ -143,7 +143,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="Хранилище DataBaseModelContainer">
+        <EntityContainer Name="Хранилище scriptModelContainer">
           <EntitySet Name="Запчасти" EntityType="Self.Запчасти" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Заявки" EntityType="Self.Заявки" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Неисправности" EntityType="Self.Неисправности" Schema="dbo" store:Type="Tables" />
@@ -180,7 +180,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="DataBaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="scriptModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Запчасти">
           <Key>
             <PropertyRef Name="id_запчасти" />
@@ -331,7 +331,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="DemoEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DemoEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Запчасти" EntityType="Self.Запчасти" />
           <EntitySet Name="Заявки" EntityType="Self.Заявки" />
           <EntitySet Name="Неисправности" EntityType="Self.Неисправности" />
@@ -369,9 +369,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище DataBaseModelContainer" CdmEntityContainer="DemoEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище scriptModelContainer" CdmEntityContainer="DemoEntities1">
           <EntitySetMapping Name="Запчасти">
-            <EntityTypeMapping TypeName="DataBaseModel.Запчасти">
+            <EntityTypeMapping TypeName="scriptModel.Запчасти">
               <MappingFragment StoreEntitySet="Запчасти">
                 <ScalarProperty Name="id_запчасти" ColumnName="id_запчасти" />
                 <ScalarProperty Name="Название_запчасти" ColumnName="Название_запчасти" />
@@ -382,7 +382,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Заявки">
-            <EntityTypeMapping TypeName="DataBaseModel.Заявки">
+            <EntityTypeMapping TypeName="scriptModel.Заявки">
               <MappingFragment StoreEntitySet="Заявки">
                 <ScalarProperty Name="id_заявки" ColumnName="id_заявки" />
                 <ScalarProperty Name="Дата_открытия" ColumnName="Дата_открытия" />
@@ -398,7 +398,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Неисправности">
-            <EntityTypeMapping TypeName="DataBaseModel.Неисправности">
+            <EntityTypeMapping TypeName="scriptModel.Неисправности">
               <MappingFragment StoreEntitySet="Неисправности">
                 <ScalarProperty Name="id_неисправности" ColumnName="id_неисправности" />
                 <ScalarProperty Name="Неисправность" ColumnName="Неисправность" />
@@ -406,7 +406,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Оборудование">
-            <EntityTypeMapping TypeName="DataBaseModel.Оборудование">
+            <EntityTypeMapping TypeName="scriptModel.Оборудование">
               <MappingFragment StoreEntitySet="Оборудование">
                 <ScalarProperty Name="id_оборудования" ColumnName="id_оборудования" />
                 <ScalarProperty Name="Оборудование1" ColumnName="Оборудование" />
@@ -415,7 +415,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Пользователи">
-            <EntityTypeMapping TypeName="DataBaseModel.Пользователи">
+            <EntityTypeMapping TypeName="scriptModel.Пользователи">
               <MappingFragment StoreEntitySet="Пользователи">
                 <ScalarProperty Name="id_пользователя" ColumnName="id_пользователя" />
                 <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
@@ -428,7 +428,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Роль">
-            <EntityTypeMapping TypeName="DataBaseModel.Роль">
+            <EntityTypeMapping TypeName="scriptModel.Роль">
               <MappingFragment StoreEntitySet="Роль">
                 <ScalarProperty Name="id_роли" ColumnName="id_роли" />
                 <ScalarProperty Name="Роль1" ColumnName="Роль" />
@@ -436,7 +436,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Статус">
-            <EntityTypeMapping TypeName="DataBaseModel.Статус">
+            <EntityTypeMapping TypeName="scriptModel.Статус">
               <MappingFragment StoreEntitySet="Статус">
                 <ScalarProperty Name="id_статуса" ColumnName="id_статуса" />
                 <ScalarProperty Name="Статус1" ColumnName="Статус" />

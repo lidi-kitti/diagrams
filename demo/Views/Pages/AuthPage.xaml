@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="600"
       Title="Авторизация" >
 
-    <Grid>
+    <Grid Name="GridAuth">
         <Grid Background="Gray"  >
             <Label VerticalAlignment="Center" HorizontalAlignment="Center" Content="Вход" Margin ="0 0 0 150 "></Label>
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin ="0 0 0 0 ">

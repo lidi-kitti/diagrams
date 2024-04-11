@@ -14,8 +14,8 @@ namespace demo
     /// </summary>
     public partial class App : Application
     {
-        public static DemoEntities GetContext { get; } = new DemoEntities();
-        public static DemoEntities Context
+        public static DemoEntities1 GetContext { get; } = new DemoEntities1();
+        public static DemoEntities1 Context
         {  get; set; }
         public static Пользователи currentUser = null;
         public static Заявки currentApplication = null;

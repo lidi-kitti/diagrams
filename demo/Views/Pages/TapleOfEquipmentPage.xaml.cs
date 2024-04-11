@@ -28,7 +28,12 @@ namespace demo.Views.Pages
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.GoBack();
+            this.NavigationService.Navigate(new HomePage());
+        }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new AddEquipment());
         }
     }
 }

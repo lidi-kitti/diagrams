@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="DataBaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="scriptModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="Запчасти">
     <Key>
       <PropertyRef Name="id_запчасти" />
@@ -150,7 +150,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="DemoEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="DemoEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Запчасти" EntityType="Self.Запчасти" />
     <EntitySet Name="Заявки" EntityType="Self.Заявки" />
     <EntitySet Name="Неисправности" EntityType="Self.Неисправности" />

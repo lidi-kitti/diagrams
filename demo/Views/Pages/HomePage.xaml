@@ -5,21 +5,20 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:demo.Views.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="446.4" d:DesignWidth="646.4"
       Title="HomePage" Loaded="Page_Loaded">
     <Grid Background="LightGray">
-        <Button Content="Заявки" Margin="325,164,325,233" Click="Button_Click_5"/>
-        <Button Content="Новая заявка" HorizontalAlignment="Left" Margin="258,344,0,0" VerticalAlignment="Top" Height="30" Width="110" Click="Button_Click_1"/>
-        <Label Content="Выберите кнопку в соотвестиве с тем, что вы хотите изменить или посмотреть" FontSize="15" HorizontalAlignment="Left" Margin="47,87,0,0" VerticalAlignment="Top" Height="31" Width="576"/>
-        <Label Content="Для создания новой заявки:"  Margin="80,346,518,0" VerticalAlignment="Top" Height="26" Width="202"/>
-
-        <Button Content="Выйти" HorizontalAlignment="Left" Margin="616,344,0,0" VerticalAlignment="Top" Height="30" Width="110" Click="Button_Click_2"/>
-        <Button Content="Оборудование" Margin="146,0,506,233" Click="Button_Click" Height="53" VerticalAlignment="Bottom"/>
-        <Button Content="Запчасти" HorizontalAlignment="Left" Margin="499,164,0,0" VerticalAlignment="Top" Click="Button_Click_6" Height="53" Width="150"/>
-        <Button Content="Неисправности" HorizontalAlignment="Left" Margin="220,237,0,0" VerticalAlignment="Top" Click="Button_Click_4" Height="53" Width="148"/>
-        <Button Content="Пользователи" HorizontalAlignment="Left" Margin="424,237,0,0" VerticalAlignment="Top" Click="Button_Click_3" Height="53" Width="150"/>
-        <Label Content="Для выхода из приложения:"  Margin="437,344,161,0" VerticalAlignment="Top" Height="26" Width="202"/>
+        <Label Content="Для выхода из приложения:"  Margin="43,322,0,0" VerticalAlignment="Top" Height="26" Width="202" HorizontalAlignment="Left"/>
         <Label Content="Главное окно администратора" FontSize="20"   HorizontalAlignment="Left" Margin="47,43,0,0" VerticalAlignment="Top" Height="39" Width="452"/>
+        <Label Content="Выберите кнопку в соотвестиве с тем, что вы хотите изменить или посмотреть" FontSize="15" HorizontalAlignment="Left" Margin="47,87,0,0" VerticalAlignment="Top" Height="31" Width="576"/>
+        <Label Content="Для создания новой заявки:"  Margin="43,281,0,0" VerticalAlignment="Top" Height="26" Width="202" HorizontalAlignment="Left"/>
+        <Button Content="Новая заявка" HorizontalAlignment="Left" Margin="221,279,0,0" VerticalAlignment="Top" Height="30" Width="110" Click="Button_Click_1"/>
+        <Button Content="Заявки" Margin="185,130,0,0" Click="Button_Click_5" HorizontalAlignment="Left" Width="112" Height="49" VerticalAlignment="Top"/>
+        <Button Content="Выйти" HorizontalAlignment="Left" Margin="218,322,0,0" VerticalAlignment="Top" Height="30" Width="110" Click="Button_Click_2"/>
+        <Button Content="Оборудование" Margin="47,126,0,0" Click="Button_Click" Height="53" VerticalAlignment="Top" HorizontalAlignment="Left" Width="108"/>
+        <Button Content="Запчасти" HorizontalAlignment="Left" Margin="335,130,0,0" VerticalAlignment="Top" Click="Button_Click_6" Height="53" Width="90"/>
+        <Button Content="Неисправности" HorizontalAlignment="Left" Margin="47,203,0,0" VerticalAlignment="Top" Click="Button_Click_4" Height="53" Width="118"/>
+        <Button Content="Пользователи" HorizontalAlignment="Left" Margin="185,203,0,0" VerticalAlignment="Top" Click="Button_Click_3" Height="53" Width="112"/>
 
     </Grid>
 </Page>

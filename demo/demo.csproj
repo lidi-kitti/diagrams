@@ -81,6 +81,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataBase.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\DataClass.cs" />
     <Compile Include="Models\Запчасти.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
     </Compile>
@@ -106,6 +107,15 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>scriptDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\AddEmployeePage.xaml.cs">
+      <DependentUpon>AddEmployeePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\AddEquipment.xaml.cs">
+      <DependentUpon>AddEquipment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\AddMalfunction.xaml.cs">
+      <DependentUpon>AddMalfunction.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\AuthPage.xaml.cs">
       <DependentUpon>AuthPage.xaml</DependentUpon>
@@ -137,6 +147,18 @@
     <Compile Include="Views\Pages\TapleOfEquipmentPage.xaml.cs">
       <DependentUpon>TapleOfEquipmentPage.xaml</DependentUpon>
     </Compile>
+    <Page Include="Views\Pages\AddEmployeePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\AddEquipment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\AddMalfunction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Pages\AuthPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -216,17 +238,6 @@
       <DependentUpon>DataBase.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\demo.Models.Connection.datasource" />
-    <None Include="Properties\DataSources\demo.Models.DemoEntities.datasource" />
-    <None Include="Properties\DataSources\demo.Models.Demo_exEntities.datasource" />
-    <None Include="Properties\DataSources\demo.Models.sysdiagrams.datasource" />
-    <None Include="Properties\DataSources\demo.Models.Запчасти.datasource" />
-    <None Include="Properties\DataSources\demo.Models.Заявки.datasource" />
-    <None Include="Properties\DataSources\demo.Models.Неисправности.datasource" />
-    <None Include="Properties\DataSources\demo.Models.Оборудование.datasource" />
-    <None Include="Properties\DataSources\demo.Models.Пользователи.datasource" />
-    <None Include="Properties\DataSources\demo.Models.Роль.datasource" />
-    <None Include="Properties\DataSources\demo.Models.Статус.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -260,6 +271,9 @@
       <DependentUpon>DataBase.edmx</DependentUpon>
       <LastGenOutput>DataBase.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

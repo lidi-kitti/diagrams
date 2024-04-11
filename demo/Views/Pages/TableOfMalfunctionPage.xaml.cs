@@ -1,4 +1,5 @@
-﻿using System;
+﻿using demo.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,7 @@ namespace demo.Views.Pages
     /// </summary>
     public partial class TableOfMalfunctionPage : Page
     {
+        DemoEntities1 exEntities = new DemoEntities1();
         public TableOfMalfunctionPage()
         {
             InitializeComponent();
@@ -29,7 +31,25 @@ namespace demo.Views.Pages
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.GoBack();
+            this.NavigationService.Navigate(new HomePage());
+        }
+
+        private void PageLoaded(object sender, RoutedEventArgs e)
+        {
+            var query =
+               from Неисправности in exEntities.Неисправности
+               select new
+               {
+                   Неисправности.id_неисправности,
+                   Неисправности.Неисправность
+                   
+               };
+            GridMalfunction.ItemsSource = query.ToList();
+        }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new AddMalfunction());
         }
     }
 }

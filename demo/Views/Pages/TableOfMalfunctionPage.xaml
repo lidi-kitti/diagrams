@@ -6,21 +6,22 @@
       xmlns:local="clr-namespace:demo.Views.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="TableOfMalfunctionPage">
+      Title="TableOfMalfunctionPage" Loaded="PageLoaded">
 
-    <Grid>
+    <Grid >
+        
         <StackPanel Margin=" 20 50 50 50" Background="AliceBlue">
             <StackPanel Orientation="Horizontal" Margin=" 0 0 0 5">
                 <Button x:Name="BackButton" Content="Назад" Click="BackButton_Click" HorizontalAlignment="Right" Width="50" Height="20" Margin="10 0 20 0" Background="AliceBlue"/>
-                <Button x:Name="AddButton" Content="Добавить новую неисправность"  HorizontalAlignment="Left"  Height="20" Margin="0 0 20 0" Background="AliceBlue"/>
-                <Button x:Name="DelButton" Content="Удалить неисправность"  HorizontalAlignment="Left"  Height="20" Margin="0 0 20 0" Background="AliceBlue"/>
+                <Button x:Name="AddButton" Content="Добавить новую Неисправности"  HorizontalAlignment="Left"  Height="20" Margin="0 0 20 0" Background="AliceBlue" Click="AddButton_Click"/>
+                <Button x:Name="DelButton" Content="Удалить Неисправности"  HorizontalAlignment="Left"  Height="20" Margin="0 0 20 0" Background="AliceBlue"/>
             </StackPanel>
             <StackPanel Margin=" 0 0 0 0" Background="AliceBlue">
 
                 <DataGrid x:Name="GridMalfunction" AutoGenerateColumns="false">
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="id несиправности" Binding="{Binding id_неиспрвности}" />
-                        <DataGridTextColumn Header="Название" Binding="{Binding Неисправности.Неисправность}"/>
+                        <DataGridTextColumn Header="Название" Binding="{Binding Неисправности.Неисправности}"/>
                       
                     </DataGrid.Columns>
                 </DataGrid>

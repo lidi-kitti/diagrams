@@ -97,3 +97,9 @@ C:\Users\user\Source\Repos\diagrams\demo\obj\Debug\Views\Pages\PartsPage.g.cs
 C:\Users\user\Source\Repos\diagrams\demo\obj\Debug\Views\Pages\PartsPage.baml
 C:\Users\user\Source\Repos\diagrams\demo\obj\Debug\Views\Pages\TableOfMalfunctionPage.g.cs
 C:\Users\user\Source\Repos\diagrams\demo\obj\Debug\Views\Pages\TableOfMalfunctionPage.baml
+C:\Users\user\Source\Repos\diagrams\demo\obj\Debug\Views\Pages\AddEmployeePage.g.cs
+C:\Users\user\Source\Repos\diagrams\demo\obj\Debug\Views\Pages\AddEmployeePage.baml
+C:\Users\user\Source\Repos\diagrams\demo\obj\Debug\Views\Pages\AddEquipment.g.cs
+C:\Users\user\Source\Repos\diagrams\demo\obj\Debug\Views\Pages\AddEquipment.baml
+C:\Users\user\Source\Repos\diagrams\demo\obj\Debug\Views\Pages\AddMalfunction.g.cs
+C:\Users\user\Source\Repos\diagrams\demo\obj\Debug\Views\Pages\AddMalfunction.baml

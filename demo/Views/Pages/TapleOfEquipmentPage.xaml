@@ -12,15 +12,15 @@
         <StackPanel Margin=" 20 50 50 50" Background="AliceBlue">
             <StackPanel Orientation="Horizontal" Margin=" 0 0 0 5">
                 <Button x:Name="BackButton" Content="Назад" Click="BackButton_Click" HorizontalAlignment="Right" Width="50" Height="20" Margin="10 0 20 0" Background="#FF9CA8E4"/>
-                <Button x:Name="AddButton" Content="Добавить новое оборудование"  HorizontalAlignment="Left"  Height="20" Margin="0 0 20 0" Background="#FF9CA8E4"/>
+                <Button x:Name="AddButton" Content="Добавить новое оборудование"  HorizontalAlignment="Left"  Height="20" Margin="0 0 20 0" Background="#FF9CA8E4" Click="AddButton_Click"/>
                 <Button x:Name="DelButton" Content="Удалить оборудование"  HorizontalAlignment="Left"  Height="20" Margin="0 0 20 0" Background="#FF9CA8E4"/>
             </StackPanel>
             <StackPanel Margin=" 0 0 0 0" Background="AliceBlue">
 
                 <DataGrid x:Name="GridEquip" AutoGenerateColumns="false">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Название" Binding="{Binding Equipment_name}" />
-                        <DataGridTextColumn Header="Серийный номер" Binding="{Binding Serial_number}"/>
+                        <DataGridTextColumn Header="Название" Binding="{Binding Оборудование}" />
+                        <DataGridTextColumn Header="Серийный номер" Binding="{Binding Серийный_номер}"/>
 
                     </DataGrid.Columns>
                 </DataGrid>
