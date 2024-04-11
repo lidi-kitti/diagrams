@@ -32,10 +32,23 @@ namespace demo.Views.Pages
             
                 if (!String.IsNullOrEmpty(Login.Text) && !String.IsNullOrEmpty(Password.Text))
                 {
-                    var user = userController.SignInUser(Login.Text.Trim().ToLower(), Password.Text.Trim().ToLower());
+                    var user = userController.SignInUser(Login.Text, Password.Text);
                     App.currentUser = user;
-                    this.NavigationService.Navigate(new HomePage());
+                    switch(user.id_роли)
+                    {
+                        case 1: MessageBox.Show("Здравствуйте, Клиент " + user.Имя + "!", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
+                        this.NavigationService.Navigate(new HomePageClient());
+                        break;
+                        case 2: MessageBox.Show("Здравствуйте, Администратор " + user.Имя + "!", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
+                        this.NavigationService.Navigate(new HomePage());
+                        break;
+                        default:MessageBox.Show("Данные о пользователе не обнаружены" , "Уведомление", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        break;
 
+
+                }
+                
+                    
                 }
                 else
                 {

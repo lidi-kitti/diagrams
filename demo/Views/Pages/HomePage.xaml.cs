@@ -27,21 +27,38 @@ namespace demo.Views.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            this.NavigationService.Navigate(new TapleOfEquipmentPage());
+        }
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new TableOfMalfunctionPage());
+        }
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new EmployeePage());
+        }
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
             this.NavigationService.Navigate(new TableOfApplicationPage());
         }
-
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            this.NavigationService.Navigate(new NewApplicationPage());
 
         }
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.GoBack();
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new PartsPage());
         }
     }
 }

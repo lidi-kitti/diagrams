@@ -13,10 +13,10 @@ namespace demo.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Demo_exEntities : DbContext
+    public partial class DemoEntities1 : DbContext
     {
-        public Demo_exEntities()
-            : base("name=Demo_exEntities")
+        public DemoEntities1()
+            : base("name=DemoEntities1")
         {
         }
     
@@ -25,7 +25,6 @@ namespace demo.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Запчасти> Запчасти { get; set; }
         public virtual DbSet<Заявки> Заявки { get; set; }
         public virtual DbSet<Неисправности> Неисправности { get; set; }

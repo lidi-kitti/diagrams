@@ -1,0 +1,54 @@
+﻿<Page x:Class="demo.Views.Pages.NewApplicationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:demo.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="NewApplicationPage">
+
+    <Grid Background="Gray"  >
+        <StackPanel Margin="50,0,50,0" Background="Gray" Height="350" VerticalAlignment="Center">
+            <StackPanel Margin=" 20 20 20 20" Width="400" Height="270" Background="Gray" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+                <Label Content="Новая заявка" HorizontalAlignment="Center" />
+
+                <StackPanel Orientation="Horizontal" Background="AliceBlue" Margin="10">
+
+
+                    <StackPanel Background="AliceBlue" Width="150" Height="60" VerticalAlignment="Center" HorizontalAlignment="Left"  Margin="30 0 0 0" Orientation="Vertical">
+                        <Label Content="Оборудование" HorizontalAlignment="Center"></Label>
+                        <Label Content="Неисправности"  HorizontalAlignment="Center"/>
+
+
+
+                    </StackPanel>
+
+                    <StackPanel Background="AliceBlue" Width="150" Height="60" VerticalAlignment="Center" HorizontalAlignment="Right"  Margin="0" Orientation="Vertical">
+
+                        <ComboBox x:Name="Equipment_cb" SelectedItem="{Binding Заявки.id_оборудования}" SelectionChanged="Equipment_cb_SelectionChanged"  Margin="3"/>
+                        <ComboBox x:Name="Defect_cb" SelectedItem="{Binding Заявки.id_неисправности}" SelectionChanged="Malfunction_cb_SelectionChanged" Margin="3"/>
+
+
+
+                    </StackPanel>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Problem"  HorizontalAlignment="Center"/>
+                    <TextBox x:Name="Problem_tb" Text="{Binding Описание_проблемы}" Width="300" Height="80" Margin="3"/>
+                </StackPanel>
+
+                <StackPanel Background="Gray" Height="47" >
+                    <Button x:Name="SaveButton" Click="SaveButton_Click" Content="Save" Width="70"  Margin="20" Background="AliceBlue"/>
+                </StackPanel>
+            </StackPanel>
+            <Button x:Name="BackButton" Content="Закрыть" Click="BackButton_Click" Width="50" Height="20" Background="AliceBlue"/>
+        </StackPanel>
+
+
+
+    </Grid>
+</Page>

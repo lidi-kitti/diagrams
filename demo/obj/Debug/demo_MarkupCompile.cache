@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\user\Source\Repos\diagrams\demo\App.xaml
-5438768857
+14115110829
 2430569841
-22-897733679
+331630184904
 18-218325889
-Views\Pages\AuthPage.xaml;Views\Pages\HomePage.xaml;Views\Pages\RegPage.xaml;Views\Pages\TableOfApplicationPage.xaml;MainWindow.xaml;
+Views\Pages\AddEmployeePage.xaml;Views\Pages\AddEquipment.xaml;Views\Pages\AddMalfunction.xaml;Views\Pages\AuthPage.xaml;Views\Pages\EmployeePage.xaml;Views\Pages\HomePage.xaml;Views\Pages\HomePageClient.xaml;Views\Pages\NewApplicationPage.xaml;Views\Pages\PartsPage.xaml;Views\Pages\RegPage.xaml;Views\Pages\TableOfApplicationPage.xaml;MainWindow.xaml;Views\Pages\TableOfMalfunctionPage.xaml;Views\Pages\TapleOfEquipmentPage.xaml;
 
 False
 

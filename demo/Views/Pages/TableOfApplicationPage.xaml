@@ -6,26 +6,11 @@
       xmlns:local="clr-namespace:demo.Views.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Список Заявок" Loaded="PageLoaded">
+      Title="Список Заявок" Loaded="PageLoaded" IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid>
-        <StackPanel Margin="20,50,27,50">
-            <StackPanel Margin="20 50 50 50">
-                <DataGrid x:Name="GridOrders" AutoGenerateColumns="False" Width="528" Height="45">
+        <DataGrid Name="GridOrders"/>
+        <Button Content="Назад" Height="34" Width="170" Click="Button_Click" />
 
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="Номер" Binding="{Binding id_заявки}" Width="*"/>
-                        <DataGridTextColumn Header="Дата добавления" Binding="{Binding Дата_открытия}" Width="*"/>
-                        <DataGridTextColumn Header="Проблема" Binding="{Binding Описание_проблемы}" Width="*"/>
-                        <DataGridTextColumn Header="Оборудование" Binding="{Binding Оборудование.Оборудование1}" Width="*"/>
-                        <DataGridTextColumn Header="Неисправность" Binding="{Binding Неисправность.Неисправность}" Width="*"/>
-                        <DataGridTextColumn Header="Статус заявки" Binding="{Binding Статус.Статус1}" Width="*"/>
-                        <DataGridTextColumn Header="Сумма" Binding="{Binding Итоговая_стоимость}" Width="*"/>
-                    </DataGrid.Columns>
-                </DataGrid>
-            </StackPanel>
-            <Button Content="Назад" Height="34" Width="170" Margin="0 0 20 0" />
-
-        </StackPanel>
     </Grid>
 </Page>
