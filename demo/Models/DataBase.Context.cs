@@ -13,10 +13,10 @@ namespace demo.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DemoEntities1 : DbContext
+    public partial class Demo_exEntities1 : DbContext
     {
-        public DemoEntities1()
-            : base("name=DemoEntities1")
+        public Demo_exEntities1()
+            : base("Demo_exEntities1")
         {
         }
     
@@ -25,12 +25,12 @@ namespace demo.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Запчасти> Запчасти { get; set; }
-        public virtual DbSet<Заявки> Заявки { get; set; }
-        public virtual DbSet<Неисправности> Неисправности { get; set; }
-        public virtual DbSet<Оборудование> Оборудование { get; set; }
-        public virtual DbSet<Пользователи> Пользователи { get; set; }
-        public virtual DbSet<Роль> Роль { get; set; }
-        public virtual DbSet<Статус> Статус { get; set; }
+        public virtual DbSet<ApplicationTable> ApplicationTable { get; set; }
+        public virtual DbSet<EquipmentTable> EquipmentTable { get; set; }
+        public virtual DbSet<MalfunctionTable> MalfunctionTable { get; set; }
+        public virtual DbSet<RoleTable> RoleTable { get; set; }
+        public virtual DbSet<SparePartTable> SparePartTable { get; set; }
+        public virtual DbSet<StatusTable> StatusTable { get; set; }
+        public virtual DbSet<UserTable> UserTable { get; set; }
     }
 }

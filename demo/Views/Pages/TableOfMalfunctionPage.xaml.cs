@@ -21,11 +21,11 @@ namespace demo.Views.Pages
     /// </summary>
     public partial class TableOfMalfunctionPage : Page
     {
-        DemoEntities1 exEntities = new DemoEntities1();
+        Demo_exEntities1 exEntities = new Demo_exEntities1();
         public TableOfMalfunctionPage()
         {
             InitializeComponent();
-            GridMalfunction.ItemsSource = App.GetContext.Неисправности.ToList();
+            GridMalfunction.ItemsSource = App.GetContext.MalfunctionTable.ToList();
 
         }
 
@@ -37,11 +37,11 @@ namespace demo.Views.Pages
         private void PageLoaded(object sender, RoutedEventArgs e)
         {
             var query =
-               from Неисправности in exEntities.Неисправности
+               from MalfunctionTable in exEntities.MalfunctionTable
                select new
                {
-                   Неисправности.id_неисправности,
-                   Неисправности.Неисправность
+                   MalfunctionTable.id_malfunction,
+                   MalfunctionTable.name_malfunction
                    
                };
             GridMalfunction.ItemsSource = query.ToList();

@@ -12,22 +12,18 @@ namespace demo.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Оборудование
+    public partial class StatusTable
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Оборудование()
+        public StatusTable()
         {
-            this.Запчасти = new HashSet<Запчасти>();
-            this.Заявки = new HashSet<Заявки>();
+            this.ApplicationTable = new HashSet<ApplicationTable>();
         }
     
-        public int id_оборудования { get; set; }
-        public string Оборудование1 { get; set; }
-        public Nullable<int> Серийный_номер { get; set; }
+        public int id_status { get; set; }
+        public string name_status { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Запчасти> Запчасти { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Заявки> Заявки { get; set; }
+        public virtual ICollection<ApplicationTable> ApplicationTable { get; set; }
     }
 }

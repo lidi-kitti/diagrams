@@ -27,8 +27,8 @@
 
                     <StackPanel Background="AliceBlue" Width="150" Height="60" VerticalAlignment="Center" HorizontalAlignment="Right"  Margin="0" Orientation="Vertical">
 
-                        <ComboBox x:Name="Equipment_cb" SelectedItem="{Binding Заявки.id_оборудования}" SelectionChanged="Equipment_cb_SelectionChanged"  Margin="3"/>
-                        <ComboBox x:Name="Defect_cb" SelectedItem="{Binding Заявки.id_неисправности}" SelectionChanged="Malfunction_cb_SelectionChanged" Margin="3"/>
+                        <ComboBox x:Name="Equipment_cb" SelectedItem="{Binding ApplicationTable.id_application}" SelectionChanged="Equipment_cb_SelectionChanged"  Margin="3"/>
+                        <ComboBox x:Name="Defect_cb" SelectedItem="{Binding ApplicationTable.id_malfunction}" SelectionChanged="Malfunction_cb_SelectionChanged" Margin="3"/>
 
 
 
@@ -38,7 +38,7 @@
 
                 <StackPanel Orientation="Vertical">
                     <Label Content="Problem"  HorizontalAlignment="Center"/>
-                    <TextBox x:Name="Problem_tb" Text="{Binding Описание_проблемы}" Width="300" Height="80" Margin="3"/>
+                    <TextBox x:Name="Problem_tb" Text="{Binding ApplicationTable.problem_description}" Width="300" Height="80" Margin="3"/>
                 </StackPanel>
 
                 <StackPanel Background="Gray" Height="47" >

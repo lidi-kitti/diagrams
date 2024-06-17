@@ -24,7 +24,7 @@ namespace demo.Views.Pages
     /// </summary>
     public partial class NewApplicationPage : Page
     {
-        private Заявки _currentOrder = new Заявки();
+        private ApplicationTable _currentOrder = new ApplicationTable();
         public NewApplicationPage()
         {
             InitializeComponent();
@@ -37,49 +37,49 @@ namespace demo.Views.Pages
         }
         void fill_breakingBox()
         {
-            string connectionString = "Data Source=LAPTOP-N9J4H06Q\\MSSQLSERVER01;Initial Catalog=script;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-K259ROS\\SQLEXPRESS;Integrated Security=True;Connect Timeout=30;Encrypt=False"; //путь
             SqlConnection connection = new SqlConnection(connectionString);
 
             // Напишите SQL-запрос для извлечения значений
-            string query = "select Оборудование from [script].[dbo].[Оборудование]";
+            string query = "select EquipmentTable from [script].[dbo].[EquipmentTable]";
            // Создаем объект DataAdapter для выполнения запроса
             SqlDataAdapter dataAdapter = new SqlDataAdapter(query, connection);
             DataSet dataSet = new DataSet();
 
             // Заполняем набор данных с помощью DataAdapter
-            dataAdapter.Fill(dataSet, "Оборудование");
+            dataAdapter.Fill(dataSet, "EquipmentTable");
             // Создаем объект DataTable, куда будем загружать данные
-            DataTable dt = dataSet.Tables["Оборудование"];
+            DataTable dt = dataSet.Tables["EquipmentTable"];
             // Привязываем данные к свойству ItemsSource вашего ComboBox
             Equipment_cb.ItemsSource = dt.DefaultView;
-            Equipment_cb.DisplayMemberPath = "Оборудование"; // Указываем, какое поле отображать в ComboBox
+            Equipment_cb.DisplayMemberPath = "name_equipment"; // Указываем, какое поле отображать в ComboBox
 
         }
         void fill_breakingBox2()
         {
-            string connectionString = "Data Source=LAPTOP-N9J4H06Q\\MSSQLSERVER01;Initial Catalog=script;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-K259ROS\\SQLEXPRESS;Integrated Security=True;Connect Timeout=30;Encrypt=False"; //путь
             SqlConnection connection = new SqlConnection(connectionString);
 
             // Напишите SQL-запрос для извлечения значений
-            string query2 = "select Неисправность from [script].[dbo].[Неисправности]";
+            string query2 = "select MalfunctionTable from [script].[dbo].[MalfunctionTable]";
             // Создаем объект DataAdapter для выполнения запроса
             SqlDataAdapter dataAdapter2 = new SqlDataAdapter(query2, connection);
             DataSet dataSet = new DataSet();
 
             // Заполняем набор данных с помощью DataAdapter
-            dataAdapter2.Fill(dataSet, "Неисправности");
+            dataAdapter2.Fill(dataSet, "MalfunctionTable");
             // Создаем объект DataTable, куда будем загружать данные
-            DataTable dt2 = dataSet.Tables["Неисправности"];
+            DataTable dt2 = dataSet.Tables["MalfunctionTable"];
             // Привязываем данные к свойству ItemsSource вашего ComboBox
             Defect_cb.ItemsSource = dt2.DefaultView;
-            Defect_cb.DisplayMemberPath = "Неисправность"; // Указываем, какое поле отображать в ComboBox
+            Defect_cb.DisplayMemberPath = "name_malfunction"; // Указываем, какое поле отображать в ComboBox
 
         }
 
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            if (_currentOrder.id_заявки == 0)
+            if (_currentOrder.id_application == 0)
 
             {
                 
@@ -95,7 +95,7 @@ namespace demo.Views.Pages
                     Random r = new Random();
                     k = r.Next(6, 10000);
                     k = k + 1;
-                    string querystring = $"insert into [script].[dbo].[Заявки] (id_заявки, Описание_проблемы) values ('{k}','{problem}')";
+                    string querystring = $"insert into [script].[dbo].[ApplicationTable] (id_application, problem_description) values ('{k}','{problem}')";
                     SqlCommand command = new SqlCommand(querystring, dataClass.getConnection());
 
                     dataClass.openConnection();
@@ -120,7 +120,7 @@ namespace demo.Views.Pages
         private void Equipment_cb_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             DataRowView selectedDataRowViewEquipment = Equipment_cb.SelectedItem as DataRowView;
-            string name = selectedDataRowViewEquipment["Оборудование"].ToString();
+            string name = selectedDataRowViewEquipment["EquipmentTable"].ToString();
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -131,7 +131,7 @@ namespace demo.Views.Pages
         private void Malfunction_cb_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             DataRowView selectedDataRowViewMalfunction = Defect_cb.SelectedItem as DataRowView;
-            string name = selectedDataRowViewMalfunction["Неисправность"].ToString();
+            string name = selectedDataRowViewMalfunction["MalfunctionTable"].ToString();
 
         }
     }

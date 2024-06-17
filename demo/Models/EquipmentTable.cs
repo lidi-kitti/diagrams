@@ -12,18 +12,22 @@ namespace demo.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Неисправности
+    public partial class EquipmentTable
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Неисправности()
+        public EquipmentTable()
         {
-            this.Заявки = new HashSet<Заявки>();
+            this.ApplicationTable = new HashSet<ApplicationTable>();
+            this.SparePartTable = new HashSet<SparePartTable>();
         }
     
-        public int id_неисправности { get; set; }
-        public string Неисправность { get; set; }
+        public int id_equipment { get; set; }
+        public string name_equipment { get; set; }
+        public Nullable<int> serial_number { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Заявки> Заявки { get; set; }
+        public virtual ICollection<ApplicationTable> ApplicationTable { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SparePartTable> SparePartTable { get; set; }
     }
 }

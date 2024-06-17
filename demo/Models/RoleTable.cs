@@ -12,14 +12,18 @@ namespace demo.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Запчасти
+    public partial class RoleTable
     {
-        public int id_запчасти { get; set; }
-        public string Название_запчасти { get; set; }
-        public Nullable<int> id_оборудования { get; set; }
-        public Nullable<decimal> Стоимость { get; set; }
-        public Nullable<int> Наличие_шт { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public RoleTable()
+        {
+            this.UserTable = new HashSet<UserTable>();
+        }
     
-        public virtual Оборудование Оборудование { get; set; }
+        public int id_role { get; set; }
+        public string name_role { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<UserTable> UserTable { get; set; }
     }
 }

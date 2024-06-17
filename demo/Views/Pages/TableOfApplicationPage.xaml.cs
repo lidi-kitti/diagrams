@@ -21,7 +21,7 @@ namespace demo.Views.Pages
     /// </summary>
     public partial class TableOfApplicationPage : Page
     {
-        DemoEntities1 exEntities = new DemoEntities1();
+        Demo_exEntities1 exEntities = new Demo_exEntities1();
         public TableOfApplicationPage()
         {
             InitializeComponent();
@@ -30,18 +30,18 @@ namespace demo.Views.Pages
         private void PageLoaded(object sender, RoutedEventArgs e)
         {
             var query =
-                from Заявки in exEntities.Заявки
+                from ApplicationTable in exEntities.ApplicationTable
                 select new
                 {
-                    Заявки.id_заявки,
-                    Заявки.id_исполнителя,
-                    Заявки.id_клиента,
-                    Заявки.id_неисправности,
-                    Заявки.id_оборудования,
-                    Заявки.id_статуса,
-                    Заявки.Дата_открытия,
-                    Заявки.Описание_проблемы,
-                    Заявки.Статус
+                    ApplicationTable.id_application,
+                    ApplicationTable.id_executor,
+                    ApplicationTable.id_client,
+                    ApplicationTable.id_malfunction,
+                    ApplicationTable.id_equipment,
+                    ApplicationTable.id_status,
+                    ApplicationTable.opening_date,
+                    ApplicationTable.problem_description
+                    
                 };
             GridOrders.ItemsSource = query.ToList();
         }

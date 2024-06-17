@@ -12,24 +12,18 @@ namespace demo.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Пользователи
+    public partial class MalfunctionTable
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Пользователи()
+        public MalfunctionTable()
         {
-            this.Заявки = new HashSet<Заявки>();
+            this.ApplicationTable = new HashSet<ApplicationTable>();
         }
     
-        public int id_пользователя { get; set; }
-        public string Фамилия { get; set; }
-        public string Имя { get; set; }
-        public string Отчество { get; set; }
-        public string Почта { get; set; }
-        public string Пароль { get; set; }
-        public Nullable<int> id_роли { get; set; }
+        public int id_malfunction { get; set; }
+        public string name_malfunction { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Заявки> Заявки { get; set; }
-        public virtual Роль Роль { get; set; }
+        public virtual ICollection<ApplicationTable> ApplicationTable { get; set; }
     }
 }

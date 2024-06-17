@@ -19,8 +19,8 @@
 
                 <DataGrid x:Name="GridEquip" AutoGenerateColumns="false">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Название" Binding="{Binding Оборудование}" />
-                        <DataGridTextColumn Header="Серийный номер" Binding="{Binding Серийный_номер}"/>
+                        <DataGridTextColumn Header="Название" Binding="{Binding EquipmentTable}" />
+                        <DataGridTextColumn Header="Серийный номер" Binding="{Binding serial_number}"/>
 
                     </DataGrid.Columns>
                 </DataGrid>

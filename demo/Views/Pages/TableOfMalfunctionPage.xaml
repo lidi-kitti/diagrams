@@ -20,8 +20,8 @@
 
                 <DataGrid x:Name="GridMalfunction" AutoGenerateColumns="false">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="id несиправности" Binding="{Binding id_неиспрвности}" />
-                        <DataGridTextColumn Header="Название" Binding="{Binding Неисправности.Неисправности}"/>
+                        <DataGridTextColumn Header="id несиправности" Binding="{Binding id_malfunction}" />
+                        <DataGridTextColumn Header="Название" Binding="{Binding MalfunctionTable.id_malfunction}"/>
                       
                     </DataGrid.Columns>
                 </DataGrid>

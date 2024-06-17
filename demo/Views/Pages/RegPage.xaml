@@ -31,6 +31,10 @@
                     <Label Width="75">Пароль</Label>
                     <TextBox x:Name="Password" Width="150" Height="22"/>
                 </StackPanel>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Label Width="75">Телефон</Label>
+                    <TextBox x:Name="Phone" Width="150" Height="22"/>
+                </StackPanel>
             </StackPanel>
             <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Horizontal" Height="199" Margin="0,225,0,0">
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">

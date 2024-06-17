@@ -12,32 +12,33 @@ namespace demo.Controllers
     {
         Connection connection = new Connection();
         private int kp=6;
-        public List<Пользователи> GetUsers()
+        public List<UserTable> GetUsers()
         {
             try
             {
-                var users = connection.auth.Пользователи.ToList();
+                var users = connection.auth.UserTable.ToList();
                 return users;
             }
             catch (Exception ex) { throw new Exception($"{ex.Message}"); }
         }
-        public Пользователи CreateNewUser(string name, string secondname, string lastname, string email, string password)
+        public UserTable CreateNewUser(string name, string secondname, string lastname, string email, string password)
         {
             try
             {
-                Пользователи users = new Пользователи
+                UserTable users = new UserTable
                 {
-                    id_пользователя = kp + 1,
-                    Фамилия = string.Empty,
-                    Имя = string.Empty,
-                    Отчество = string.Empty,
-                    Почта = string.Empty,
-                    Пароль = string.Empty,
-                    id_роли = 1
+                    id_user = kp + 1,
+                    surname_user = string.Empty,
+                    name_user = string.Empty,
+                    patronymic_user = string.Empty,
+                    email_user = string.Empty,
+                    password_user = string.Empty,
+                    id_role = 1,
+                    phone_user = string.Empty
                     
 
                 };
-                connection.auth.Пользователи.Add(users);
+                connection.auth.UserTable.Add(users);
                 connection.auth.SaveChanges();
                 MessageBox.Show("Пользователь зарегистрирован!");
                 return users;
@@ -46,11 +47,11 @@ namespace demo.Controllers
             { throw new Exception($"{ex.Message}"); }
         }
         
-        public Пользователи SignInUser( string username, string password)
+        public UserTable SignInUser( string username, string password)
         {
             try
             {
-                var user = connection.auth.Пользователи.Where(x => x.Почта == username && x.Пароль == password).First();
+                var user = connection.auth.UserTable.Where(x => x.email_user == username && x.password_user == password).First();
                 return user;
             }
             catch (Exception ex)

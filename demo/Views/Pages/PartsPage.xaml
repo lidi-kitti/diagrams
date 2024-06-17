@@ -19,10 +19,10 @@
 
                 <DataGrid x:Name="GridParts" AutoGenerateColumns="false">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Название" Binding="{Binding Название_запчасти}" />
-                        <DataGridTextColumn Header="Оборудование" Binding="{Binding Оборудование.Оборудование}"/>
-                        <DataGridTextColumn Header="Стоимость" Binding="{Binding Стоимость}" />
-                        <DataGridTextColumn Header="Наличие" Binding="{Binding Наличие_шт}" />
+                        <DataGridTextColumn Header="Название" Binding="{Binding name_spare_part}" />
+                        <DataGridTextColumn Header="Оборудование" Binding="{Binding EquipmentTable.name_equipment}"/>
+                        <DataGridTextColumn Header="Стоимость" Binding="{Binding cost}" />
+                        <DataGridTextColumn Header="Наличие" Binding="{Binding availability}" />
 
                     </DataGrid.Columns>
                 </DataGrid>

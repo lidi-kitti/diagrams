@@ -23,7 +23,7 @@ namespace demo.Views.Pages
         public PartsPage()
         {
             InitializeComponent();
-            GridParts.ItemsSource = App.GetContext.Запчасти.ToList();
+            GridParts.ItemsSource = App.GetContext.ApplicationTable.ToList();
         }
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {

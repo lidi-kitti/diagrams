@@ -15,16 +15,16 @@ namespace demo.Controllers
 
         
       
-        public Заявки CreateNewApplication(string equipment, string description)
+        public ApplicationTable CreateNewApplication(string equipment, string description)
         {
             try
-            {    Заявки appl= new Заявки
-                {
-                   id_заявки = k+1,
-                   Описание_проблемы = description
+            {    ApplicationTable appl= new ApplicationTable
+            {
+                   id_application = k+1,
+                   problem_description = description
 
                 };
-                connection.auth.Заявки.Add(appl);
+                connection.auth.ApplicationTable.Add(appl);
                 connection.auth.SaveChanges();
                 return  appl;
             }

@@ -8,8 +8,8 @@ namespace demo.Models
 {
     internal class Connection
     {
-        public DemoEntities1 auth = new DemoEntities1();
-        public scriptDataSet scriptDataSet = new scriptDataSet();
+        public Demo_exEntities1 auth = new Demo_exEntities1();
+        
         int k = 5;
     }
 }

@@ -41,6 +41,7 @@ namespace demo.Views.Pages
             string email = Email.Text.Trim();
             string password = Password.Text.Trim();
             int k = 0;
+            string phone = Phone.Text.Trim();
             if (firstName.Length < 1)
             {
                 Name.ToolTip = "Это поле введено некорректно!";
@@ -76,7 +77,7 @@ namespace demo.Views.Pages
                 Random r = new Random();
                 k = r.Next(6, 10000);
                 k = k + 1;
-                string querystring = $"insert into [script].[dbo].[Пользователи] (id_пользователя, Фамилия, Имя, Отчество, Почта, Пароль, id_роли) values ('{k}','{secondName}','{firstName}', '{lastName}', '{email}', '{password}','1')";
+                string querystring = $"insert into [script].[dbo].[UserTable] (id_user, surname_user, name_user, patronymic_user, email_user, password_user, id_role,phone_user) values ('{k}','{secondName}','{firstName}', '{lastName}', '{email}', '{password}','1','{phone}')";
                 SqlCommand command = new SqlCommand(querystring, dataClass.getConnection());
 
                 dataClass.openConnection();
