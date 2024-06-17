@@ -21,7 +21,7 @@ namespace demo.Views.Pages
     /// </summary>
     public partial class TableOfMalfunctionPage : Page
     {
-        Demo_exEntities1 exEntities = new Demo_exEntities1();
+        Demo_examEntities exEntities = new Demo_examEntities();
         public TableOfMalfunctionPage()
         {
             InitializeComponent();

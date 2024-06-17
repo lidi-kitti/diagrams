@@ -48,7 +48,7 @@ namespace demo.Views.Pages
 
         private void SerchBoxBtn_Click(object sender, RoutedEventArgs e)
         {
-            string connectionString = "Data Source=DESKTOP-K259ROS\\SQLEXPRESS;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=True";
+            string connectionString = "Data Source=LAPTOP-N9J4H06Q\\MSSQLSERVER01;Initial Catalog=Demo_exam;Integrated Security=True";
 
             string email = SerchBox.Text;
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -60,7 +60,7 @@ namespace demo.Views.Pages
                     $"SELECT id_user, surname_user, name_user," +
                     $"patronymic_user," +
                     $"email_user," +
-                    $"password_user FROM [script].[dbo].[UserTable] where email_user = @Email";
+                    $"password_user FROM UserTable where email_user = @Email";
 
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Email", email);

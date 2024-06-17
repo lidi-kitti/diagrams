@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="092b6378ea284026995570707e32c763" Name="Diagram1">
+        <EntityTypeShape EntityType="Demo_examModel.ApplicationTable" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo_examModel.EquipmentTable" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo_examModel.MalfunctionTable" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo_examModel.RoleTable" Width="1.5" PointX="1.5" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo_examModel.SparePartTable" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo_examModel.StatusTable" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo_examModel.UserTable" Width="1.5" PointX="0.75" PointY="11.5" IsExpanded="true" />
+        <AssociationConnector Association="Demo_examModel.FK_Заявки_Неисправности" ManuallyRouted="false" />
+        <AssociationConnector Association="Demo_examModel.FK_Заявки_Оборудование" ManuallyRouted="false" />
+        <AssociationConnector Association="Demo_examModel.FK_Заявки_Пользователи" ManuallyRouted="false" />
+        <AssociationConnector Association="Demo_examModel.FK_Заявки_Статус" ManuallyRouted="false" />
+        <AssociationConnector Association="Demo_examModel.FK_Запчасти_Оборудование" ManuallyRouted="false" />
+        <AssociationConnector Association="Demo_examModel.FK_Пользователи_Роль" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

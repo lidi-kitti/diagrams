@@ -37,42 +37,42 @@ namespace demo.Views.Pages
         }
         void fill_breakingBox()
         {
-            string connectionString = "Data Source=DESKTOP-K259ROS\\SQLEXPRESS;Integrated Security=True;Connect Timeout=30;Encrypt=False"; //путь
+            string connectionString = "Data Source=LAPTOP-N9J4H06Q\\MSSQLSERVER01;Initial Catalog=Demo_exam;Integrated Security=True"; //путь
             SqlConnection connection = new SqlConnection(connectionString);
 
             // Напишите SQL-запрос для извлечения значений
-            string query = "select EquipmentTable from [script].[dbo].[EquipmentTable]";
+            string query = "select name_equipment from  [EquipmentTable]";
            // Создаем объект DataAdapter для выполнения запроса
             SqlDataAdapter dataAdapter = new SqlDataAdapter(query, connection);
             DataSet dataSet = new DataSet();
 
             // Заполняем набор данных с помощью DataAdapter
-            dataAdapter.Fill(dataSet, "EquipmentTable");
+            dataAdapter.Fill(dataSet, "name_equipment");
             // Создаем объект DataTable, куда будем загружать данные
-            DataTable dt = dataSet.Tables["EquipmentTable"];
-            // Привязываем данные к свойству ItemsSource вашего ComboBox
-            Equipment_cb.ItemsSource = dt.DefaultView;
-            Equipment_cb.DisplayMemberPath = "name_equipment"; // Указываем, какое поле отображать в ComboBox
+            //DataTable dt = dataSet.Tables["EquipmentTable"];
+            //// Привязываем данные к свойству ItemsSource вашего ComboBox
+            //Equipment_cb.ItemsSource = dt.DefaultView;
+            //Equipment_cb.DisplayMemberPath = "name_equipment"; // Указываем, какое поле отображать в ComboBox
 
         }
         void fill_breakingBox2()
         {
-            string connectionString = "Data Source=DESKTOP-K259ROS\\SQLEXPRESS;Integrated Security=True;Connect Timeout=30;Encrypt=False"; //путь
+            string connectionString = "Data Source=LAPTOP-N9J4H06Q\\MSSQLSERVER01;Initial Catalog=Demo_exam;Integrated Security=True"; //путь
             SqlConnection connection = new SqlConnection(connectionString);
 
             // Напишите SQL-запрос для извлечения значений
-            string query2 = "select MalfunctionTable from [script].[dbo].[MalfunctionTable]";
+            string query2 = "select name_malfunction from [MalfunctionTable]";
             // Создаем объект DataAdapter для выполнения запроса
             SqlDataAdapter dataAdapter2 = new SqlDataAdapter(query2, connection);
             DataSet dataSet = new DataSet();
 
             // Заполняем набор данных с помощью DataAdapter
-            dataAdapter2.Fill(dataSet, "MalfunctionTable");
+            dataAdapter2.Fill(dataSet, "name_malfunction");
             // Создаем объект DataTable, куда будем загружать данные
-            DataTable dt2 = dataSet.Tables["MalfunctionTable"];
-            // Привязываем данные к свойству ItemsSource вашего ComboBox
-            Defect_cb.ItemsSource = dt2.DefaultView;
-            Defect_cb.DisplayMemberPath = "name_malfunction"; // Указываем, какое поле отображать в ComboBox
+            //DataTable dt2 = dataSet.Tables["MalfunctionTable"];
+            //// Привязываем данные к свойству ItemsSource вашего ComboBox
+            //Defect_cb.ItemsSource = dt2.DefaultView;
+            //Defect_cb.DisplayMemberPath = "name_malfunction"; // Указываем, какое поле отображать в ComboBox
 
         }
 
@@ -95,7 +95,7 @@ namespace demo.Views.Pages
                     Random r = new Random();
                     k = r.Next(6, 10000);
                     k = k + 1;
-                    string querystring = $"insert into [script].[dbo].[ApplicationTable] (id_application, problem_description) values ('{k}','{problem}')";
+                    string querystring = $"insert into [ApplicationTable] (id_application, problem_description) values ('{k}','{problem}')";
                     SqlCommand command = new SqlCommand(querystring, dataClass.getConnection());
 
                     dataClass.openConnection();

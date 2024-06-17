@@ -22,7 +22,7 @@
                     <DataGrid.Columns>
                         <DataGridTextColumn x:Name ="SecondName"  Header="Фамилия" Binding="{Binding surname_user}" />
                         <DataGridTextColumn x:Name ="Name" Header="Имя" Binding="{Binding name_user}"/>
-                        <DataGridTextColumn x:Name ="LastdName" Header="Отчество" Binding="{Binding patronymic_name}"/>
+                        <DataGridTextColumn x:Name ="LastdName" Header="Отчество" Binding="{Binding patronymic_user}"/>
                         <DataGridTextColumn x:Name ="Email" Header="Почта" Binding="{Binding email_user}"/>
                         <DataGridTextColumn x:Name ="Password" Header="Пароль" Binding="{Binding password_user}"/>
                         <DataGridTextColumn x:Name ="Phone" Header="Пароль" Binding="{Binding phone_user}"/>

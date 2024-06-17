@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Хранилище Demo_exModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="Хранилище Demo_examModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="ApplicationTable">
           <Key>
             <PropertyRef Name="id_application" />
@@ -144,7 +144,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="Хранилище Demo_exModelContainer">
+        <EntityContainer Name="Хранилище Demo_examModelContainer">
           <EntitySet Name="ApplicationTable" EntityType="Self.ApplicationTable" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="EquipmentTable" EntityType="Self.EquipmentTable" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MalfunctionTable" EntityType="Self.MalfunctionTable" Schema="dbo" store:Type="Tables" />
@@ -181,7 +181,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="Demo_exModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="Demo_examModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="ApplicationTable">
           <Key>
             <PropertyRef Name="id_application" />
@@ -333,7 +333,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="Demo_exEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Demo_examEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ApplicationTable" EntityType="Self.ApplicationTable" />
           <EntitySet Name="EquipmentTable" EntityType="Self.EquipmentTable" />
           <EntitySet Name="MalfunctionTable" EntityType="Self.MalfunctionTable" />
@@ -371,9 +371,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище Demo_exModelContainer" CdmEntityContainer="Demo_exEntities1">
+        <EntityContainerMapping StorageEntityContainer="Хранилище Demo_examModelContainer" CdmEntityContainer="Demo_examEntities">
           <EntitySetMapping Name="ApplicationTable">
-            <EntityTypeMapping TypeName="Demo_exModel.ApplicationTable">
+            <EntityTypeMapping TypeName="Demo_examModel.ApplicationTable">
               <MappingFragment StoreEntitySet="ApplicationTable">
                 <ScalarProperty Name="id_application" ColumnName="id_application" />
                 <ScalarProperty Name="opening_date" ColumnName="opening_date" />
@@ -389,7 +389,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="EquipmentTable">
-            <EntityTypeMapping TypeName="Demo_exModel.EquipmentTable">
+            <EntityTypeMapping TypeName="Demo_examModel.EquipmentTable">
               <MappingFragment StoreEntitySet="EquipmentTable">
                 <ScalarProperty Name="id_equipment" ColumnName="id_equipment" />
                 <ScalarProperty Name="name_equipment" ColumnName="name_equipment" />
@@ -398,7 +398,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MalfunctionTable">
-            <EntityTypeMapping TypeName="Demo_exModel.MalfunctionTable">
+            <EntityTypeMapping TypeName="Demo_examModel.MalfunctionTable">
               <MappingFragment StoreEntitySet="MalfunctionTable">
                 <ScalarProperty Name="id_malfunction" ColumnName="id_malfunction" />
                 <ScalarProperty Name="name_malfunction" ColumnName="name_malfunction" />
@@ -406,7 +406,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="RoleTable">
-            <EntityTypeMapping TypeName="Demo_exModel.RoleTable">
+            <EntityTypeMapping TypeName="Demo_examModel.RoleTable">
               <MappingFragment StoreEntitySet="RoleTable">
                 <ScalarProperty Name="id_role" ColumnName="id_role" />
                 <ScalarProperty Name="name_role" ColumnName="name_role" />
@@ -414,7 +414,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SparePartTable">
-            <EntityTypeMapping TypeName="Demo_exModel.SparePartTable">
+            <EntityTypeMapping TypeName="Demo_examModel.SparePartTable">
               <MappingFragment StoreEntitySet="SparePartTable">
                 <ScalarProperty Name="id_spare_part" ColumnName="id_spare_part" />
                 <ScalarProperty Name="name_spare_part" ColumnName="name_spare_part" />
@@ -425,7 +425,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="StatusTable">
-            <EntityTypeMapping TypeName="Demo_exModel.StatusTable">
+            <EntityTypeMapping TypeName="Demo_examModel.StatusTable">
               <MappingFragment StoreEntitySet="StatusTable">
                 <ScalarProperty Name="id_status" ColumnName="id_status" />
                 <ScalarProperty Name="name_status" ColumnName="name_status" />
@@ -433,7 +433,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="UserTable">
-            <EntityTypeMapping TypeName="Demo_exModel.UserTable">
+            <EntityTypeMapping TypeName="Demo_examModel.UserTable">
               <MappingFragment StoreEntitySet="UserTable">
                 <ScalarProperty Name="id_user" ColumnName="id_user" />
                 <ScalarProperty Name="surname_user" ColumnName="surname_user" />

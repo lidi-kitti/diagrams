@@ -33,5 +33,16 @@ namespace demo.Properties {
                 return ((string)(this["scriptConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-N9J4H06Q\\MSSQLSERVER01;Initial Catalog=Demo_exam;Integrated Se" +
+            "curity=True;TrustServerCertificate=True")]
+        public string Demo_examConnectionString {
+            get {
+                return ((string)(this["Demo_examConnectionString"]));
+            }
+        }
     }
 }
