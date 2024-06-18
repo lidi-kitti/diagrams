@@ -5,40 +5,45 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:demo.Views.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="400"
       Title="Регистрация" >
 
     <Grid x:Name="GridReg">
         <Grid Background="Gray"  >
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="19" Content="Регистрация" Margin ="0 0 0 200 " ></Label>
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin ="0 0 0 0 ">
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
-                    <Label Width="75">Имя</Label>
+                    <Label  Background="Yellow" Width="75">Имя</Label>
                     <TextBox x:Name="Name" Width="150" Height="22"/>
                 </StackPanel>
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
-                    <Label Width="75">Фамилия</Label>
+                    <Label  Background="Yellow" Width="75">Фамилия</Label>
                     <TextBox  x:Name="SecondName" Width="150" Height="22"/>
                 </StackPanel>
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
-                    <Label Width="75">Отчество</Label>
+                    <Label  Background="Yellow" Width="75">Отчество</Label>
                     <TextBox x:Name="LastName" Width="150" Height="22"/>
                 </StackPanel>
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
-                    <Label Width="75">Почта</Label>
+                    <Label  Background="Yellow" Width="75">Почта</Label>
                     <TextBox x:Name="Email" Width="150" Height="22"/>
                 </StackPanel>
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
-                    <Label Width="75">Пароль</Label>
+                    <Label Background="Yellow" Width="75">Пароль</Label>
                     <TextBox x:Name="Password" Width="150" Height="22"/>
+                </StackPanel>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Label Background="Yellow" Width="75">Телефон</Label>
+                    <TextBox x:Name="Phone" Width="150" Height="22"/>
                 </StackPanel>
             </StackPanel>
             <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Horizontal" Height="199" Margin="0,225,0,0">
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
-                    <Button Content="Зарегистрироваться" HorizontalAlignment="Center" Height="30" Width="144" Click="Button_Click"/>
+                    <Button Content="Зарегистрироваться" HorizontalAlignment="Center" Background="Yellow" Height="30" Width="144" Click="Button_Click"/>
                 </StackPanel>
-                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Margin ="-145 130 0 0 ">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Margin ="-145 90 0 0 ">
                     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal"  >
-                        <Button Content="На страницу входа" Height="30" Width="117" Click="Button_Click_1" />
+                        <Button Content="На страницу входа" Height="30"  Background="Yellow" Width="144" Click="Button_Click_1" />
                     </StackPanel>
                 </StackPanel>
             </StackPanel>

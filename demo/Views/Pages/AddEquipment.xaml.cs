@@ -62,7 +62,7 @@ namespace demo.Views.Pages
                 Random r = new Random();
                 k = r.Next(6, 10000);
                 k = k + 1;
-                string querystring = $"insert into [script].[dbo].[Оборудование] (id_оборудования, Оборудование, Серийный_номер) values ('{k}','{eqipName}','{serName}')";
+                string querystring = $"insert into [EquipmentTable] (id_equipment, name_equipment, serial_number) values ('{k}','{eqipName}','{serName}')";
                 SqlCommand command = new SqlCommand(querystring, dataClass.getConnection());
 
                 dataClass.openConnection();

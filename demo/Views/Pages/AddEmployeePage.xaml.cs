@@ -75,7 +75,7 @@ namespace demo.Views.Pages
                 Random r = new Random();
                 k = r.Next(6, 10000);
                 k = k + 1;
-                string querystring = $"insert into [script].[dbo].[Пользователи] (id_пользователя, Фамилия, Имя, Отчество, Почта, Пароль, id_роли) values ('{k}','{secondName}','{firstName}', '{lastName}', '{email}', '{password}','1')";
+                string querystring = $"insert into [UserTable] (id_user, surname_user, name_user, patronymic_user, email_user, password_user, id_role) values ('{k}','{secondName}','{firstName}', '{lastName}', '{email}', '{password}','1')";
                 SqlCommand command = new SqlCommand(querystring, dataClass.getConnection());
 
                 dataClass.openConnection();

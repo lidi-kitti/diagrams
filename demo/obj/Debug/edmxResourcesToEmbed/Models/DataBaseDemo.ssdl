@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Demo_examModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ApplicationTable">
+    <Key>
+      <PropertyRef Name="id_application" />
+    </Key>
+    <Property Name="id_application" Type="int" Nullable="false" />
+    <Property Name="opening_date" Type="date" />
+    <Property Name="problem_description" Type="nvarchar(max)" />
+    <Property Name="id_equipment" Type="int" />
+    <Property Name="id_malfunction" Type="int" />
+    <Property Name="id_client" Type="int" />
+    <Property Name="id_executor" Type="int" />
+    <Property Name="id_status" Type="int" />
+    <Property Name="total_cost" Type="money" />
+    <Property Name="closing_date" Type="date" />
+  </EntityType>
+  <EntityType Name="EquipmentTable">
+    <Key>
+      <PropertyRef Name="id_equipment" />
+    </Key>
+    <Property Name="id_equipment" Type="int" Nullable="false" />
+    <Property Name="name_equipment" Type="nvarchar" MaxLength="50" />
+    <Property Name="serial_number" Type="int" />
+  </EntityType>
+  <EntityType Name="MalfunctionTable">
+    <Key>
+      <PropertyRef Name="id_malfunction" />
+    </Key>
+    <Property Name="id_malfunction" Type="int" Nullable="false" />
+    <Property Name="name_malfunction" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="RoleTable">
+    <Key>
+      <PropertyRef Name="id_role" />
+    </Key>
+    <Property Name="id_role" Type="int" Nullable="false" />
+    <Property Name="name_role" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SparePartTable">
+    <Key>
+      <PropertyRef Name="id_spare_part" />
+    </Key>
+    <Property Name="id_spare_part" Type="int" Nullable="false" />
+    <Property Name="name_spare_part" Type="nvarchar" MaxLength="50" />
+    <Property Name="id_equipment" Type="int" />
+    <Property Name="cost" Type="money" />
+    <Property Name="availability" Type="int" />
+  </EntityType>
+  <EntityType Name="StatusTable">
+    <Key>
+      <PropertyRef Name="id_status" />
+    </Key>
+    <Property Name="id_status" Type="int" Nullable="false" />
+    <Property Name="name_status" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UserTable">
+    <Key>
+      <PropertyRef Name="id_user" />
+    </Key>
+    <Property Name="id_user" Type="int" Nullable="false" />
+    <Property Name="surname_user" Type="nvarchar" MaxLength="50" />
+    <Property Name="name_user" Type="nvarchar" MaxLength="50" />
+    <Property Name="patronymic_user" Type="nvarchar" MaxLength="50" />
+    <Property Name="email_user" Type="nvarchar" MaxLength="50" />
+    <Property Name="password_user" Type="nvarchar" MaxLength="50" />
+    <Property Name="id_role" Type="int" />
+    <Property Name="phone_user" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Запчасти_Оборудование">
+    <End Role="EquipmentTable" Type="Self.EquipmentTable" Multiplicity="0..1" />
+    <End Role="SparePartTable" Type="Self.SparePartTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EquipmentTable">
+        <PropertyRef Name="id_equipment" />
+      </Principal>
+      <Dependent Role="SparePartTable">
+        <PropertyRef Name="id_equipment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Заявки_Неисправности">
+    <End Role="MalfunctionTable" Type="Self.MalfunctionTable" Multiplicity="0..1" />
+    <End Role="ApplicationTable" Type="Self.ApplicationTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MalfunctionTable">
+        <PropertyRef Name="id_malfunction" />
+      </Principal>
+      <Dependent Role="ApplicationTable">
+        <PropertyRef Name="id_malfunction" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Заявки_Оборудование">
+    <End Role="EquipmentTable" Type="Self.EquipmentTable" Multiplicity="0..1" />
+    <End Role="ApplicationTable" Type="Self.ApplicationTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EquipmentTable">
+        <PropertyRef Name="id_equipment" />
+      </Principal>
+      <Dependent Role="ApplicationTable">
+        <PropertyRef Name="id_equipment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Заявки_Пользователи">
+    <End Role="UserTable" Type="Self.UserTable" Multiplicity="0..1" />
+    <End Role="ApplicationTable" Type="Self.ApplicationTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserTable">
+        <PropertyRef Name="id_user" />
+      </Principal>
+      <Dependent Role="ApplicationTable">
+        <PropertyRef Name="id_client" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Заявки_Статус">
+    <End Role="StatusTable" Type="Self.StatusTable" Multiplicity="0..1" />
+    <End Role="ApplicationTable" Type="Self.ApplicationTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusTable">
+        <PropertyRef Name="id_status" />
+      </Principal>
+      <Dependent Role="ApplicationTable">
+        <PropertyRef Name="id_status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Пользователи_Роль">
+    <End Role="RoleTable" Type="Self.RoleTable" Multiplicity="0..1" />
+    <End Role="UserTable" Type="Self.UserTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoleTable">
+        <PropertyRef Name="id_role" />
+      </Principal>
+      <Dependent Role="UserTable">
+        <PropertyRef Name="id_role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище Demo_examModelContainer">
+    <EntitySet Name="ApplicationTable" EntityType="Self.ApplicationTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EquipmentTable" EntityType="Self.EquipmentTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MalfunctionTable" EntityType="Self.MalfunctionTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RoleTable" EntityType="Self.RoleTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SparePartTable" EntityType="Self.SparePartTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StatusTable" EntityType="Self.StatusTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserTable" EntityType="Self.UserTable" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Запчасти_Оборудование" Association="Self.FK_Запчасти_Оборудование">
+      <End Role="EquipmentTable" EntitySet="EquipmentTable" />
+      <End Role="SparePartTable" EntitySet="SparePartTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Заявки_Неисправности" Association="Self.FK_Заявки_Неисправности">
+      <End Role="MalfunctionTable" EntitySet="MalfunctionTable" />
+      <End Role="ApplicationTable" EntitySet="ApplicationTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Заявки_Оборудование" Association="Self.FK_Заявки_Оборудование">
+      <End Role="EquipmentTable" EntitySet="EquipmentTable" />
+      <End Role="ApplicationTable" EntitySet="ApplicationTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Заявки_Пользователи" Association="Self.FK_Заявки_Пользователи">
+      <End Role="UserTable" EntitySet="UserTable" />
+      <End Role="ApplicationTable" EntitySet="ApplicationTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Заявки_Статус" Association="Self.FK_Заявки_Статус">
+      <End Role="StatusTable" EntitySet="StatusTable" />
+      <End Role="ApplicationTable" EntitySet="ApplicationTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Пользователи_Роль" Association="Self.FK_Пользователи_Роль">
+      <End Role="RoleTable" EntitySet="RoleTable" />
+      <End Role="UserTable" EntitySet="UserTable" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

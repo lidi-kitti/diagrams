@@ -9,7 +9,7 @@ namespace demo.Models
 {
     internal class DataClass
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-N9J4H06Q\MSSQLSERVER01;Initial Catalog=script;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-N9J4H06Q\MSSQLSERVER01;Initial Catalog=Demo_exam;Integrated Security=True");
 
         public void openConnection()
 

@@ -12,18 +12,14 @@ namespace demo.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Статус
+    public partial class SparePartTable
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Статус()
-        {
-            this.Заявки = new HashSet<Заявки>();
-        }
+        public int id_spare_part { get; set; }
+        public string name_spare_part { get; set; }
+        public Nullable<int> id_equipment { get; set; }
+        public Nullable<decimal> cost { get; set; }
+        public Nullable<int> availability { get; set; }
     
-        public int id_статуса { get; set; }
-        public string Статус1 { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Заявки> Заявки { get; set; }
+        public virtual EquipmentTable EquipmentTable { get; set; }
     }
 }

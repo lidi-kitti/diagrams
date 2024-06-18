@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\user\Source\Repos\diagrams\demo\obj\Debug\
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\ДЭ\program\demo\obj\Debug\
 demo
 none
 false
 DEBUG;TRACE
-C:\Users\user\Source\Repos\diagrams\demo\App.xaml
+C:\Users\user\OneDrive\Рабочий стол\ШАРАГА\3 курс\ДЭ\program\demo\App.xaml
 14115110829
-2430569841
-331630184904
-18-218325889
+21720353333
+35-1798847955
+18-184871859
 Views\Pages\AddEmployeePage.xaml;Views\Pages\AddEquipment.xaml;Views\Pages\AddMalfunction.xaml;Views\Pages\AuthPage.xaml;Views\Pages\EmployeePage.xaml;Views\Pages\HomePage.xaml;Views\Pages\HomePageClient.xaml;Views\Pages\NewApplicationPage.xaml;Views\Pages\PartsPage.xaml;Views\Pages\RegPage.xaml;Views\Pages\TableOfApplicationPage.xaml;MainWindow.xaml;Views\Pages\TableOfMalfunctionPage.xaml;Views\Pages\TapleOfEquipmentPage.xaml;
 
-False
+True
 

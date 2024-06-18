@@ -5,14 +5,28 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:demo.Views.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="HomePageClient" >
+      d:DesignHeight="200" d:DesignWidth="600"
+      Title="Окно пользователя" >
 
-    <Grid Background="AliceBlue">
-        <Label Content="Для создания новой заявки на починку оборудования" HorizontalAlignment="Center" VerticalAlignment="Top" Height="42" Width="314" Margin="0,70,0,0"/>
+    <Grid Background="Gray" >
+        <StackPanel>
+             <StackPanel>
+                <Label Content="Добро пожаловать!" FontSize="20" HorizontalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Для создания новой заявки на починку оборудования" FontSize="15" HorizontalAlignment="Center"/>
 
-        <Button Content="Новая заявка" HorizontalAlignment="Center" Margin="0,135,0,0" VerticalAlignment="Top" Height="30" Width="110" Click="Button_Click"/>
-        <Button Content="Выйти" HorizontalAlignment="Center" Margin="0,195,0,0" VerticalAlignment="Top" Height="30" Width="110" Click="Button_Click_1"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Для регистрации новой заявки:"  HorizontalAlignment="Center"/>
+                <Button Content="Новая заявка" Background="Yellow"  Height="30" Width="110" Click="Button_Click"/>
 
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Для выхода из приложения:"  HorizontalAlignment="Center"/>
+                <Button Content="Выйти" Background="Yellow"  Height="30" Width="110" Click="Button_Click_1"/>
+
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>

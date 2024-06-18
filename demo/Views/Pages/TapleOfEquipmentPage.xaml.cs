@@ -23,7 +23,7 @@ namespace demo.Views.Pages
         public TapleOfEquipmentPage()
         {
             InitializeComponent();
-            GridEquip.ItemsSource = App.GetContext.Оборудование.ToList();
+            GridEquip.ItemsSource = App.GetContext.EquipmentTable.ToList();
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)

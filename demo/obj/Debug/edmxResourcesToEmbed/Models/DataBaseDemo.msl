@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Demo_examModelContainer" CdmEntityContainer="Demo_examEntities">
+    <EntitySetMapping Name="ApplicationTable">
+      <EntityTypeMapping TypeName="Demo_examModel.ApplicationTable">
+        <MappingFragment StoreEntitySet="ApplicationTable">
+          <ScalarProperty Name="id_application" ColumnName="id_application" />
+          <ScalarProperty Name="opening_date" ColumnName="opening_date" />
+          <ScalarProperty Name="problem_description" ColumnName="problem_description" />
+          <ScalarProperty Name="id_equipment" ColumnName="id_equipment" />
+          <ScalarProperty Name="id_malfunction" ColumnName="id_malfunction" />
+          <ScalarProperty Name="id_client" ColumnName="id_client" />
+          <ScalarProperty Name="id_executor" ColumnName="id_executor" />
+          <ScalarProperty Name="id_status" ColumnName="id_status" />
+          <ScalarProperty Name="total_cost" ColumnName="total_cost" />
+          <ScalarProperty Name="closing_date" ColumnName="closing_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EquipmentTable">
+      <EntityTypeMapping TypeName="Demo_examModel.EquipmentTable">
+        <MappingFragment StoreEntitySet="EquipmentTable">
+          <ScalarProperty Name="id_equipment" ColumnName="id_equipment" />
+          <ScalarProperty Name="name_equipment" ColumnName="name_equipment" />
+          <ScalarProperty Name="serial_number" ColumnName="serial_number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MalfunctionTable">
+      <EntityTypeMapping TypeName="Demo_examModel.MalfunctionTable">
+        <MappingFragment StoreEntitySet="MalfunctionTable">
+          <ScalarProperty Name="id_malfunction" ColumnName="id_malfunction" />
+          <ScalarProperty Name="name_malfunction" ColumnName="name_malfunction" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoleTable">
+      <EntityTypeMapping TypeName="Demo_examModel.RoleTable">
+        <MappingFragment StoreEntitySet="RoleTable">
+          <ScalarProperty Name="id_role" ColumnName="id_role" />
+          <ScalarProperty Name="name_role" ColumnName="name_role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SparePartTable">
+      <EntityTypeMapping TypeName="Demo_examModel.SparePartTable">
+        <MappingFragment StoreEntitySet="SparePartTable">
+          <ScalarProperty Name="id_spare_part" ColumnName="id_spare_part" />
+          <ScalarProperty Name="name_spare_part" ColumnName="name_spare_part" />
+          <ScalarProperty Name="id_equipment" ColumnName="id_equipment" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="availability" ColumnName="availability" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusTable">
+      <EntityTypeMapping TypeName="Demo_examModel.StatusTable">
+        <MappingFragment StoreEntitySet="StatusTable">
+          <ScalarProperty Name="id_status" ColumnName="id_status" />
+          <ScalarProperty Name="name_status" ColumnName="name_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserTable">
+      <EntityTypeMapping TypeName="Demo_examModel.UserTable">
+        <MappingFragment StoreEntitySet="UserTable">
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+          <ScalarProperty Name="surname_user" ColumnName="surname_user" />
+          <ScalarProperty Name="name_user" ColumnName="name_user" />
+          <ScalarProperty Name="patronymic_user" ColumnName="patronymic_user" />
+          <ScalarProperty Name="email_user" ColumnName="email_user" />
+          <ScalarProperty Name="password_user" ColumnName="password_user" />
+          <ScalarProperty Name="id_role" ColumnName="id_role" />
+          <ScalarProperty Name="phone_user" ColumnName="phone_user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

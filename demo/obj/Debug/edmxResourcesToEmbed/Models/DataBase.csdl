@@ -1,186 +1,187 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="scriptModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="Запчасти">
+<Schema Namespace="Demo_exModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ApplicationTable">
     <Key>
-      <PropertyRef Name="id_запчасти" />
+      <PropertyRef Name="id_application" />
     </Key>
-    <Property Name="id_запчасти" Type="Int32" Nullable="false" />
-    <Property Name="Название_запчасти" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="id_оборудования" Type="Int32" />
-    <Property Name="Стоимость" Type="Decimal" Precision="19" Scale="4" />
-    <Property Name="Наличие_шт" Type="Int32" />
-    <NavigationProperty Name="Оборудование" Relationship="Self.FK_Запчасти_Оборудование" FromRole="Запчасти" ToRole="Оборудование" />
+    <Property Name="id_application" Type="Int32" Nullable="false" />
+    <Property Name="opening_date" Type="DateTime" Precision="0" />
+    <Property Name="problem_description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="id_equipment" Type="Int32" />
+    <Property Name="id_malfunction" Type="Int32" />
+    <Property Name="id_client" Type="Int32" />
+    <Property Name="id_executor" Type="Int32" />
+    <Property Name="id_status" Type="Int32" />
+    <Property Name="total_cost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="closing_date" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="MalfunctionTable" Relationship="Self.FK_Заявки_Неисправности" FromRole="ApplicationTable" ToRole="MalfunctionTable" />
+    <NavigationProperty Name="EquipmentTable" Relationship="Self.FK_Заявки_Оборудование" FromRole="ApplicationTable" ToRole="EquipmentTable" />
+    <NavigationProperty Name="UserTable" Relationship="Self.FK_Заявки_Пользователи" FromRole="ApplicationTable" ToRole="UserTable" />
+    <NavigationProperty Name="StatusTable" Relationship="Self.FK_Заявки_Статус" FromRole="ApplicationTable" ToRole="StatusTable" />
   </EntityType>
-  <EntityType Name="Заявки">
+  <EntityType Name="EquipmentTable">
     <Key>
-      <PropertyRef Name="id_заявки" />
+      <PropertyRef Name="id_equipment" />
     </Key>
-    <Property Name="id_заявки" Type="Int32" Nullable="false" />
-    <Property Name="Дата_открытия" Type="DateTime" Precision="0" />
-    <Property Name="Описание_проблемы" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="id_оборудования" Type="Int32" />
-    <Property Name="id_неисправности" Type="Int32" />
-    <Property Name="id_клиента" Type="Int32" />
-    <Property Name="id_исполнителя" Type="Int32" />
-    <Property Name="id_статуса" Type="Int32" />
-    <Property Name="Итоговая_стоимость" Type="Decimal" Precision="19" Scale="4" />
-    <Property Name="Дата_закрытия" Type="DateTime" Precision="0" />
-    <NavigationProperty Name="Неисправности" Relationship="Self.FK_Заявки_Неисправности" FromRole="Заявки" ToRole="Неисправности" />
-    <NavigationProperty Name="Оборудование" Relationship="Self.FK_Заявки_Оборудование" FromRole="Заявки" ToRole="Оборудование" />
-    <NavigationProperty Name="Пользователи" Relationship="Self.FK_Заявки_Пользователи" FromRole="Заявки" ToRole="Пользователи" />
-    <NavigationProperty Name="Статус" Relationship="Self.FK_Заявки_Статус" FromRole="Заявки" ToRole="Статус" />
+    <Property Name="id_equipment" Type="Int32" Nullable="false" />
+    <Property Name="name_equipment" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="serial_number" Type="Int32" />
+    <NavigationProperty Name="ApplicationTable" Relationship="Self.FK_Заявки_Оборудование" FromRole="EquipmentTable" ToRole="ApplicationTable" />
+    <NavigationProperty Name="SparePartTable" Relationship="Self.FK_Запчасти_Оборудование" FromRole="EquipmentTable" ToRole="SparePartTable" />
   </EntityType>
-  <EntityType Name="Неисправности">
+  <EntityType Name="MalfunctionTable">
     <Key>
-      <PropertyRef Name="id_неисправности" />
+      <PropertyRef Name="id_malfunction" />
     </Key>
-    <Property Name="id_неисправности" Type="Int32" Nullable="false" />
-    <Property Name="Неисправность" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="Заявки" Relationship="Self.FK_Заявки_Неисправности" FromRole="Неисправности" ToRole="Заявки" />
+    <Property Name="id_malfunction" Type="Int32" Nullable="false" />
+    <Property Name="name_malfunction" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ApplicationTable" Relationship="Self.FK_Заявки_Неисправности" FromRole="MalfunctionTable" ToRole="ApplicationTable" />
   </EntityType>
-  <EntityType Name="Оборудование">
+  <EntityType Name="RoleTable">
     <Key>
-      <PropertyRef Name="id_оборудования" />
+      <PropertyRef Name="id_role" />
     </Key>
-    <Property Name="id_оборудования" Type="Int32" Nullable="false" />
-    <Property Name="Оборудование1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Серийный_номер" Type="Int32" />
-    <NavigationProperty Name="Запчасти" Relationship="Self.FK_Запчасти_Оборудование" FromRole="Оборудование" ToRole="Запчасти" />
-    <NavigationProperty Name="Заявки" Relationship="Self.FK_Заявки_Оборудование" FromRole="Оборудование" ToRole="Заявки" />
+    <Property Name="id_role" Type="Int32" Nullable="false" />
+    <Property Name="name_role" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UserTable" Relationship="Self.FK_Пользователи_Роль" FromRole="RoleTable" ToRole="UserTable" />
   </EntityType>
-  <EntityType Name="Пользователи">
+  <EntityType Name="SparePartTable">
     <Key>
-      <PropertyRef Name="id_пользователя" />
+      <PropertyRef Name="id_spare_part" />
     </Key>
-    <Property Name="id_пользователя" Type="Int32" Nullable="false" />
-    <Property Name="Фамилия" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Имя" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Отчество" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Почта" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Пароль" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="id_роли" Type="Int32" />
-    <NavigationProperty Name="Заявки" Relationship="Self.FK_Заявки_Пользователи" FromRole="Пользователи" ToRole="Заявки" />
-    <NavigationProperty Name="Роль" Relationship="Self.FK_Пользователи_Роль" FromRole="Пользователи" ToRole="Роль" />
+    <Property Name="id_spare_part" Type="Int32" Nullable="false" />
+    <Property Name="name_spare_part" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_equipment" Type="Int32" />
+    <Property Name="cost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="availability" Type="Int32" />
+    <NavigationProperty Name="EquipmentTable" Relationship="Self.FK_Запчасти_Оборудование" FromRole="SparePartTable" ToRole="EquipmentTable" />
   </EntityType>
-  <EntityType Name="Роль">
+  <EntityType Name="StatusTable">
     <Key>
-      <PropertyRef Name="id_роли" />
+      <PropertyRef Name="id_status" />
     </Key>
-    <Property Name="id_роли" Type="Int32" Nullable="false" />
-    <Property Name="Роль1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="Пользователи" Relationship="Self.FK_Пользователи_Роль" FromRole="Роль" ToRole="Пользователи" />
+    <Property Name="id_status" Type="Int32" Nullable="false" />
+    <Property Name="name_status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ApplicationTable" Relationship="Self.FK_Заявки_Статус" FromRole="StatusTable" ToRole="ApplicationTable" />
   </EntityType>
-  <EntityType Name="Статус">
+  <EntityType Name="UserTable">
     <Key>
-      <PropertyRef Name="id_статуса" />
+      <PropertyRef Name="id_user" />
     </Key>
-    <Property Name="id_статуса" Type="Int32" Nullable="false" />
-    <Property Name="Статус1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="Заявки" Relationship="Self.FK_Заявки_Статус" FromRole="Статус" ToRole="Заявки" />
+    <Property Name="id_user" Type="Int32" Nullable="false" />
+    <Property Name="surname_user" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="name_user" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="patronymic_user" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email_user" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password_user" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_role" Type="Int32" />
+    <Property Name="phone_user" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ApplicationTable" Relationship="Self.FK_Заявки_Пользователи" FromRole="UserTable" ToRole="ApplicationTable" />
+    <NavigationProperty Name="RoleTable" Relationship="Self.FK_Пользователи_Роль" FromRole="UserTable" ToRole="RoleTable" />
   </EntityType>
-  <Association Name="FK_Запчасти_Оборудование">
-    <End Role="Оборудование" Type="Self.Оборудование" Multiplicity="0..1" />
-    <End Role="Запчасти" Type="Self.Запчасти" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Оборудование">
-        <PropertyRef Name="id_оборудования" />
-      </Principal>
-      <Dependent Role="Запчасти">
-        <PropertyRef Name="id_оборудования" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_Заявки_Неисправности">
-    <End Role="Неисправности" Type="Self.Неисправности" Multiplicity="0..1" />
-    <End Role="Заявки" Type="Self.Заявки" Multiplicity="*" />
+    <End Role="MalfunctionTable" Type="Self.MalfunctionTable" Multiplicity="0..1" />
+    <End Role="ApplicationTable" Type="Self.ApplicationTable" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Неисправности">
-        <PropertyRef Name="id_неисправности" />
+      <Principal Role="MalfunctionTable">
+        <PropertyRef Name="id_malfunction" />
       </Principal>
-      <Dependent Role="Заявки">
-        <PropertyRef Name="id_неисправности" />
+      <Dependent Role="ApplicationTable">
+        <PropertyRef Name="id_malfunction" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Заявки_Оборудование">
-    <End Role="Оборудование" Type="Self.Оборудование" Multiplicity="0..1" />
-    <End Role="Заявки" Type="Self.Заявки" Multiplicity="*" />
+    <End Role="EquipmentTable" Type="Self.EquipmentTable" Multiplicity="0..1" />
+    <End Role="ApplicationTable" Type="Self.ApplicationTable" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Оборудование">
-        <PropertyRef Name="id_оборудования" />
+      <Principal Role="EquipmentTable">
+        <PropertyRef Name="id_equipment" />
       </Principal>
-      <Dependent Role="Заявки">
-        <PropertyRef Name="id_оборудования" />
+      <Dependent Role="ApplicationTable">
+        <PropertyRef Name="id_equipment" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Заявки_Пользователи">
-    <End Role="Пользователи" Type="Self.Пользователи" Multiplicity="0..1" />
-    <End Role="Заявки" Type="Self.Заявки" Multiplicity="*" />
+    <End Role="UserTable" Type="Self.UserTable" Multiplicity="0..1" />
+    <End Role="ApplicationTable" Type="Self.ApplicationTable" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Пользователи">
-        <PropertyRef Name="id_пользователя" />
+      <Principal Role="UserTable">
+        <PropertyRef Name="id_user" />
       </Principal>
-      <Dependent Role="Заявки">
-        <PropertyRef Name="id_клиента" />
+      <Dependent Role="ApplicationTable">
+        <PropertyRef Name="id_client" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Заявки_Статус">
-    <End Role="Статус" Type="Self.Статус" Multiplicity="0..1" />
-    <End Role="Заявки" Type="Self.Заявки" Multiplicity="*" />
+    <End Role="StatusTable" Type="Self.StatusTable" Multiplicity="0..1" />
+    <End Role="ApplicationTable" Type="Self.ApplicationTable" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Статус">
-        <PropertyRef Name="id_статуса" />
+      <Principal Role="StatusTable">
+        <PropertyRef Name="id_status" />
       </Principal>
-      <Dependent Role="Заявки">
-        <PropertyRef Name="id_статуса" />
+      <Dependent Role="ApplicationTable">
+        <PropertyRef Name="id_status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Запчасти_Оборудование">
+    <End Role="EquipmentTable" Type="Self.EquipmentTable" Multiplicity="0..1" />
+    <End Role="SparePartTable" Type="Self.SparePartTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EquipmentTable">
+        <PropertyRef Name="id_equipment" />
+      </Principal>
+      <Dependent Role="SparePartTable">
+        <PropertyRef Name="id_equipment" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Пользователи_Роль">
-    <End Role="Роль" Type="Self.Роль" Multiplicity="0..1" />
-    <End Role="Пользователи" Type="Self.Пользователи" Multiplicity="*" />
+    <End Role="RoleTable" Type="Self.RoleTable" Multiplicity="0..1" />
+    <End Role="UserTable" Type="Self.UserTable" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Роль">
-        <PropertyRef Name="id_роли" />
+      <Principal Role="RoleTable">
+        <PropertyRef Name="id_role" />
       </Principal>
-      <Dependent Role="Пользователи">
-        <PropertyRef Name="id_роли" />
+      <Dependent Role="UserTable">
+        <PropertyRef Name="id_role" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="DemoEntities1" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Запчасти" EntityType="Self.Запчасти" />
-    <EntitySet Name="Заявки" EntityType="Self.Заявки" />
-    <EntitySet Name="Неисправности" EntityType="Self.Неисправности" />
-    <EntitySet Name="Оборудование" EntityType="Self.Оборудование" />
-    <EntitySet Name="Пользователи" EntityType="Self.Пользователи" />
-    <EntitySet Name="Роль" EntityType="Self.Роль" />
-    <EntitySet Name="Статус" EntityType="Self.Статус" />
-    <AssociationSet Name="FK_Запчасти_Оборудование" Association="Self.FK_Запчасти_Оборудование">
-      <End Role="Оборудование" EntitySet="Оборудование" />
-      <End Role="Запчасти" EntitySet="Запчасти" />
-    </AssociationSet>
+  <EntityContainer Name="Demo_exEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ApplicationTable" EntityType="Self.ApplicationTable" />
+    <EntitySet Name="EquipmentTable" EntityType="Self.EquipmentTable" />
+    <EntitySet Name="MalfunctionTable" EntityType="Self.MalfunctionTable" />
+    <EntitySet Name="RoleTable" EntityType="Self.RoleTable" />
+    <EntitySet Name="SparePartTable" EntityType="Self.SparePartTable" />
+    <EntitySet Name="StatusTable" EntityType="Self.StatusTable" />
+    <EntitySet Name="UserTable" EntityType="Self.UserTable" />
     <AssociationSet Name="FK_Заявки_Неисправности" Association="Self.FK_Заявки_Неисправности">
-      <End Role="Неисправности" EntitySet="Неисправности" />
-      <End Role="Заявки" EntitySet="Заявки" />
+      <End Role="MalfunctionTable" EntitySet="MalfunctionTable" />
+      <End Role="ApplicationTable" EntitySet="ApplicationTable" />
     </AssociationSet>
     <AssociationSet Name="FK_Заявки_Оборудование" Association="Self.FK_Заявки_Оборудование">
-      <End Role="Оборудование" EntitySet="Оборудование" />
-      <End Role="Заявки" EntitySet="Заявки" />
+      <End Role="EquipmentTable" EntitySet="EquipmentTable" />
+      <End Role="ApplicationTable" EntitySet="ApplicationTable" />
     </AssociationSet>
     <AssociationSet Name="FK_Заявки_Пользователи" Association="Self.FK_Заявки_Пользователи">
-      <End Role="Пользователи" EntitySet="Пользователи" />
-      <End Role="Заявки" EntitySet="Заявки" />
+      <End Role="UserTable" EntitySet="UserTable" />
+      <End Role="ApplicationTable" EntitySet="ApplicationTable" />
     </AssociationSet>
     <AssociationSet Name="FK_Заявки_Статус" Association="Self.FK_Заявки_Статус">
-      <End Role="Статус" EntitySet="Статус" />
-      <End Role="Заявки" EntitySet="Заявки" />
+      <End Role="StatusTable" EntitySet="StatusTable" />
+      <End Role="ApplicationTable" EntitySet="ApplicationTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Запчасти_Оборудование" Association="Self.FK_Запчасти_Оборудование">
+      <End Role="EquipmentTable" EntitySet="EquipmentTable" />
+      <End Role="SparePartTable" EntitySet="SparePartTable" />
     </AssociationSet>
     <AssociationSet Name="FK_Пользователи_Роль" Association="Self.FK_Пользователи_Роль">
-      <End Role="Роль" EntitySet="Роль" />
-      <End Role="Пользователи" EntitySet="Пользователи" />
+      <End Role="RoleTable" EntitySet="RoleTable" />
+      <End Role="UserTable" EntitySet="UserTable" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

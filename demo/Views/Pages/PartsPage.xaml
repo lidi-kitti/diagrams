@@ -5,24 +5,24 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:demo.Views.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="PartsPage">
+      d:DesignHeight="450" d:DesignWidth="850"
+      Title="Запчасти">
 
     <Grid>
         <StackPanel Margin=" 20 50 50 50" Background="AliceBlue">
             <StackPanel Orientation="Horizontal" Margin=" 0 0 0 5">
-                <Button x:Name="BackButton" Content="Назад" Click="BackButton_Click" HorizontalAlignment="Right" Width="50" Height="20" Margin="10 0 20 0" Background="AliceBlue"/>
-                <Button x:Name="AddButton" Content="Добавить новую запчасть"  HorizontalAlignment="Left"  Height="20" Margin="0 0 20 0" Background="AliceBlue"/>
-                <Button x:Name="DelButton" Content="Удалить запчасть"  HorizontalAlignment="Left"  Height="20" Margin="0 0 20 0" Background="AliceBlue"/>
+                <Button x:Name="BackButton" Content="Назад" Click="BackButton_Click" HorizontalAlignment="Right" Width="50" Height="20" Margin="10 0 20 0" Background="Yellow"/>
+                <Button x:Name="AddButton" Content="Добавить новую запчасть"  HorizontalAlignment="Left"  Height="20" Margin="0 0 20 0" Background="Yellow"/>
+                <Button x:Name="DelButton" Content="Удалить запчасть"  HorizontalAlignment="Left"  Height="20" Margin="0 0 20 0" Background="Yellow"/>
             </StackPanel>
             <StackPanel Margin=" 0 0 0 0" Background="AliceBlue">
 
                 <DataGrid x:Name="GridParts" AutoGenerateColumns="false">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Название" Binding="{Binding Название_запчасти}" />
-                        <DataGridTextColumn Header="Оборудование" Binding="{Binding Оборудование.Оборудование}"/>
-                        <DataGridTextColumn Header="Стоимость" Binding="{Binding Стоимость}" />
-                        <DataGridTextColumn Header="Наличие" Binding="{Binding Наличие_шт}" />
+                        <DataGridTextColumn Header="Название" Width="250" Binding="{Binding name_spare_part}" />
+                        <DataGridTextColumn Header="Оборудование" Width="250" Binding="{Binding EquipmentTable.name_equipment}"/>
+                        <DataGridTextColumn Header="Стоимость" Width="100" Binding="{Binding cost}" />
+                        <DataGridTextColumn Header="Наличие" Width="100" Binding="{Binding availability}" />
 
                     </DataGrid.Columns>
                 </DataGrid>

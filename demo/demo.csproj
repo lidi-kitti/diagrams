@@ -65,48 +65,49 @@
     </ApplicationDefinition>
     <Compile Include="Controllers\ApplicationControllers.cs" />
     <Compile Include="Controllers\UserControllers.cs" />
+    <Compile Include="Controllers\UserControllersBase.cs" />
+    <Compile Include="Demo_examDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Demo_examDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ApplicationTable.cs">
+      <DependentUpon>DataBaseDemo.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Connection.cs" />
-    <Compile Include="Models\DataBase.Context.cs">
+    <Compile Include="Models\DataBaseDemo.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataBase.Context.tt</DependentUpon>
+      <DependentUpon>DataBaseDemo.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DataBase.cs">
+    <Compile Include="Models\DataBaseDemo.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataBase.tt</DependentUpon>
+      <DependentUpon>DataBaseDemo.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DataBase.Designer.cs">
+    <Compile Include="Models\DataBaseDemo.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataBase.edmx</DependentUpon>
+      <DependentUpon>DataBaseDemo.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\DataClass.cs" />
-    <Compile Include="Models\Запчасти.cs">
-      <DependentUpon>DataBase.tt</DependentUpon>
+    <Compile Include="Models\EquipmentTable.cs">
+      <DependentUpon>DataBaseDemo.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Заявки.cs">
-      <DependentUpon>DataBase.tt</DependentUpon>
+    <Compile Include="Models\MalfunctionTable.cs">
+      <DependentUpon>DataBaseDemo.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Неисправности.cs">
-      <DependentUpon>DataBase.tt</DependentUpon>
+    <Compile Include="Models\RoleTable.cs">
+      <DependentUpon>DataBaseDemo.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Оборудование.cs">
-      <DependentUpon>DataBase.tt</DependentUpon>
+    <Compile Include="Models\SparePartTable.cs">
+      <DependentUpon>DataBaseDemo.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Пользователи.cs">
-      <DependentUpon>DataBase.tt</DependentUpon>
+    <Compile Include="Models\StatusTable.cs">
+      <DependentUpon>DataBaseDemo.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Роль.cs">
-      <DependentUpon>DataBase.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Статус.cs">
-      <DependentUpon>DataBase.tt</DependentUpon>
-    </Compile>
-    <Compile Include="scriptDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>scriptDataSet.xsd</DependentUpon>
+    <Compile Include="Models\UserTable.cs">
+      <DependentUpon>DataBaseDemo.tt</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\AddEmployeePage.xaml.cs">
       <DependentUpon>AddEmployeePage.xaml</DependentUpon>
@@ -230,28 +231,28 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Models\DataBase.edmx">
+    <EntityDeploy Include="Models\DataBaseDemo.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DataBase.Designer.cs</LastGenOutput>
+      <LastGenOutput>DataBaseDemo.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Models\DataBase.edmx.diagram">
-      <DependentUpon>DataBase.edmx</DependentUpon>
+    <None Include="Demo_examDataSet.xsc">
+      <DependentUpon>Demo_examDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Demo_examDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Demo_examDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Demo_examDataSet.xss">
+      <DependentUpon>Demo_examDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Models\DataBaseDemo.edmx.diagram">
+      <DependentUpon>DataBaseDemo.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="scriptDataSet.xsc">
-      <DependentUpon>scriptDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="scriptDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>scriptDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="scriptDataSet.xss">
-      <DependentUpon>scriptDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -261,19 +262,19 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Models\DataBase.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DataBase.edmx</DependentUpon>
-      <LastGenOutput>DataBase.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\DataBase.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DataBase.edmx</DependentUpon>
-      <LastGenOutput>DataBase.cs</LastGenOutput>
-    </Content>
+    <Folder Include="Properties\DataSources\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Properties\DataSources\" />
+    <Content Include="Models\DataBaseDemo.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DataBaseDemo.edmx</DependentUpon>
+      <LastGenOutput>DataBaseDemo.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\DataBaseDemo.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DataBaseDemo.edmx</DependentUpon>
+      <LastGenOutput>DataBaseDemo.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
