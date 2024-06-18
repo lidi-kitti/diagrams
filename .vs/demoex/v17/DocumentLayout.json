@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\controllers\\usercontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\controllers\\usercontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|solutionrelative:demo\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89A26FB1-BD86-4D8B-8F44-6E43C87DAD5D}|demo\\demo.csproj|C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -219,7 +219,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -235,38 +235,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DataBase.tt",
-              "DocumentMoniker": "C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\Models\\DataBase.tt",
-              "RelativeDocumentMoniker": "demo\\Models\\DataBase.tt",
-              "ToolTip": "C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\Models\\DataBase.tt",
-              "RelativeToolTip": "demo\\Models\\DataBase.tt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-06-17T09:17:30.128Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.cs",
-              "DocumentMoniker": "C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\App.cs",
-              "RelativeDocumentMoniker": "demo\\App.cs",
-              "ToolTip": "C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\App.cs",
-              "RelativeToolTip": "demo\\App.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T17:53:44.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\App.config",
               "RelativeDocumentMoniker": "demo\\App.config",
-              "ToolTip": "C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\App.config*",
-              "RelativeToolTip": "demo\\App.config*",
+              "ToolTip": "C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\App.config",
+              "RelativeToolTip": "demo\\App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAACGAQAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2024-04-10T14:11:32.387Z",
@@ -313,6 +287,45 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserControllers.cs",
+              "DocumentMoniker": "C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\Controllers\\UserControllers.cs",
+              "RelativeDocumentMoniker": "demo\\Controllers\\UserControllers.cs",
+              "ToolTip": "C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\Controllers\\UserControllers.cs",
+              "RelativeToolTip": "demo\\Controllers\\UserControllers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T10:40:19.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.cs",
+              "DocumentMoniker": "C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\App.cs",
+              "RelativeDocumentMoniker": "demo\\App.cs",
+              "ToolTip": "C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\App.cs",
+              "RelativeToolTip": "demo\\App.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T17:53:44.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DataBase.tt",
+              "DocumentMoniker": "C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\Models\\DataBase.tt",
+              "RelativeDocumentMoniker": "demo\\Models\\DataBase.tt",
+              "ToolTip": "C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\Models\\DataBase.tt",
+              "RelativeToolTip": "demo\\Models\\DataBase.tt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-06-17T09:17:30.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
               "Title": "DataBase.Context.cs",
               "DocumentMoniker": "C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\Models\\DataBase.Context.cs",
@@ -334,19 +347,6 @@
               "RelativeToolTip": "demo\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-04-10T12:21:29.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserControllers.cs",
-              "DocumentMoniker": "C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\Controllers\\UserControllers.cs",
-              "RelativeDocumentMoniker": "demo\\Controllers\\UserControllers.cs",
-              "ToolTip": "C:\\Users\\user\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0434\u044D\\program\\demo\\Controllers\\UserControllers.cs",
-              "RelativeToolTip": "demo\\Controllers\\UserControllers.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwDoAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T10:40:19.604Z",
               "EditorCaption": ""
             },
             {
